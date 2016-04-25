@@ -1,0 +1,43 @@
+<%include ../header%>
+<script src="../merchant-doc/doc.js"></script>
+
+<div ng-app="DocApp" class="container" style="margin-bottom:30px;">
+<script src="https://pierup.cn/lib//pier_sdk_v1.min.js"></script>
+	<div ng-controller="DocController">
+		<div class="doc-container">
+		    <div class="doc-sidebar">
+			    <ul class="accordion" id="accordion" >
+		            <li  class="" ng-repeat="data in sidebarData">
+			            <div class="{{data.style}}" >
+				            <i class="{{data.icon}}"></i>
+				            {{data.content}}
+			            </div>
+			            <ul class="submenu" style="display: block;" ng-show="data.hasSub">
+				            <li class="" ng-repeat="data in data.submenu">
+					            <div class="{{data.style }}" ng-class="{ 'doc-active': data.isActive}" ng-click="switchLocation(data)">
+						            <i class="{{data.icon}}"></i>
+						            <span >{{data.content}}</span>
+					            </div>
+					            <ul class="submenu" style="display: block;" ng-show="data.hasSub">
+						            <li class="" ng-repeat="data in data.submenu">
+							            <div class="{{data.style}}" ng-click="switchLocation(data)" ng-class="{ 'doc-active': data.isActive}">
+								            <i class="{{data.icon}}"></i>
+								            <span>{{data.content}}</span>
+							            </div>
+						            </li>
+					            </ul>
+				            </li>
+			            </ul>
+		            </li>
+		        </ul>
+		   </div>
+		   <div class="doc-content">
+			   	<ui-view></ui-view>
+		   </div>
+		</div>
+    </div>
+</div>
+<%include ../footer%>
+
+
+

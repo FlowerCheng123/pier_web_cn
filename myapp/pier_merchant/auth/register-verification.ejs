@@ -1,0 +1,25 @@
+<%include ../header%>
+<div class="container" ng-app="VerificationApp" ng-controller="VerificationController">
+    <div class="auth-fence">
+		<div class="title">
+			<p>注册邮箱验证</p>
+    	</div>
+    	<div class="auth-form">
+	    	<form class="register-form">
+	    	    <div class="container-fluid text-center">
+		    	    <div class="row">
+		    	    	<div class="col-md-8 col-md-offset-2">
+			    	    	<img src="../images/merchant-email.png" style="margin-top:90px;"/>
+			    	    	<h4 style="margin-top:30px;" ng-hide="verifyError">您的邮箱已激活,<span ng-bind="timer">5</span>s后为您跳转。</h4>
+			    	    	<input type="hidden" id="token" value="<%=token%>" />
+			    	    	<p ></p>
+			    	    	<h4 style="margin-top:30px;" ng-show="verifyError" ng-bind="verifyErrorMsg">您的邮箱已激活,<span ng-bind="timer">5</span>s后为您跳转。</h4>
+		    	    	</div>
+		    	    </div>
+	    	    </div>
+	    	</form>
+    	</div>
+    </div>
+</div>
+<script src="../pier_merchant/js/verification.js"></script>
+<%include ../footer-2%>

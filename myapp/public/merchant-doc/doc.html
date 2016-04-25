@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" class='no.js'>
+<head>
+  <meta charset="UTF-8">
+  <title><%=title%></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta name="keywords" content="信用，分期，购物，海淘，信用评分" >
+  <meta name="keywords" content="个人征信，大数据，机器学习，品而信用，品而数据" >
+  <meta name="keywords" content="Pier, Inc">
+  <meta name="description" content="科技，让我们再也无需漫长的审批和等待只需几秒，我们的大数据计算就可以对你的信用进行精准的分析。了解您，只需一瞬。">
+  <meta name="description" content="我们将大数据分析、数学建模、机器学习等数据科技应用于金融行业中，致力于通过现代互联网高效、精准的数据技术来改善目前高成本、低效的人工主导的信用评估和授信体系。">
+  <meta name="description" content="省时，省钱，从未如此简单，申请额度，提高额度，使用额度，还款与费率">
+  <link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+  <link rel="stylesheet" type="text/css" href="/merchant-doc/doc.css">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/merchant.css">
+  <script src="/bower_components/angular/angular.min.js"></script>
+  <script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+
+</head>
+<body  >
+  <div class="navbar navbar-fixed-top navbar-default" id="top-nav-normal">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href='/' class='navbar-brand'><div class="footer-image logo"></div></a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="main-menu" >
+        <ul class="nav navbar-nav hidden-xs">
+
+        </ul>
+        <div class="navbar-form navbar-right">
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../merchant-doc/doc.js"></script>
+<div ng-app="DocApp" class="container" style="margin-bottom:30px;">
+	<div ng-controller="DocController">
+		<div class="doc-container">
+		    <div class="doc-sidebar">
+			    <ul class="accordion" id="accordion" >
+		            <li  class="" ng-repeat="data in sidebarData">
+			            <div class="{{data.style}}" >
+				            <i class="{{data.icon}}"></i>
+				            {{data.content}}
+			            </div>
+			            <ul class="submenu" style="display: block;" ng-show="data.hasSub">
+				            <li class="" ng-repeat="data in data.submenu">
+					            <div class="{{data.style }}" ng-class="{ 'doc-active': data.isActive}" ng-click="switchLocation(data)">
+						            <i class="{{data.icon}}"></i>
+						            <span >{{data.content}}</span>
+					            </div>
+					            <ul class="submenu" style="display: block;" ng-show="data.hasSub">
+						            <li class="" ng-repeat="data in data.submenu">
+							            <div class="{{data.style}}" ng-click="switchLocation(data)" ng-class="{ 'doc-active': data.isActive}">
+								            <i class="{{data.icon}}"></i>
+								            <span>{{data.content}}</span>
+							            </div>
+						            </li>
+					            </ul>
+				            </li>
+			            </ul>
+		            </li>
+		        </ul>
+		   </div>
+		   <div class="doc-content">
+			   	<!-- <div ng-include="contentUrl" ></div> -->
+			   	<ui-view></ui-view>
+		   </div>
+		</div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html class='no.js'>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="keywords" content="信用，分期，购物，海淘，信用评分" >
+    <meta name="keywords" content="个人征信，大数据，机器学习，品而金融，品而数据" >
+    <meta name="keywords" content="Pier, Inc">
+    <meta name="description" content="科技，让我们再也无需漫长的审批和等待只需几秒，我们的大数据计算就可以对你的信用进行精准的分析。了解您，只需一瞬。">
+    <meta name="description" content="我们将大数据分析、数学建模、机器学习等数据科技应用于金融行业中，致力于通过现代互联网高效、精准的数据技术来改善目前高成本、低效的人工主导的信用评估和授信体系。">
+    <meta name="description" content="省时，省钱，从未如此简单，申请额度，提高额度，使用额度，还款与费率">
+    <title><%=title%></title>
+    <link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!--link(rel='stylesheet', href='/bower_components/bootstrap/dist/css/bootstrap.min.css')-->
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+    <script src='/bower_components/modernizr/modernizr.js'></script>
+    <script src='/bower_components/requirejs/require.js' data-main="javascripts/main" ></script>
+    <script src='/bower_components/jquery/dist/jquery.min.js' ></script>
+  </head>
+<body <%if(location != 'doc'){%>class="body"<%}%> >
+  <div class="navbar navbar-fixed-top navbar-default" id="top-nav-normal">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href='/' class='navbar-brand'><div class="footer-image logo"></div></a>
+      </div>
+      <div class="collapse navbar-collapse" id="main-menu" >
+        <ul class="nav navbar-nav hidden-xs">
+          <li>
+            <%if(location == 'corporation'){%>
+              <a class="purple"> 企业入口</a>
+            <%}else{%>
+              <a  href='/Corporation'> 企业入口</a>
+            <%}%>
+          </li>
+        </ul>
+        <div class="navbar-form navbar-right">
+          <span class="about">
+              <a href='https://client.pierup.cn' class=''>数据风控</a>
+            <%if( !merchantStatus ){%>
+              <%if(location != 'shop'){%>
+                <a href='/shop' class=''>品而商城</a>
+              <%}else{%>
+                <a  class='active'>品而商城</a>
+              <%}%>
+
+              <%if(location != 'faq'){%>
+                <a href='/faq' class=''>常见问题</a>
+              <%}else{%>
+                <a  class='active'>常见问题</a>
+              <%}%>
+            <%}else{%>
+              <%if(location == 'doc'){%>
+                <a class='active'>接入文档</a>
+              <%}else{%>
+                <a href='/merchants/doc'>接入文档</a>
+              <%}%>
+              
+              <%if(location != 'faq'){%>
+                <a href='/faq' class=''>常见问题</a>
+              <%}else{%>
+                <a  class='active'>常见问题</a>
+              <%}%>
+            <%}%>
+            <%if(location == 'about'){%>
+              <a class="active ">关于品而</a>
+            <%}else{%>
+              <a href='/about'>关于品而</a>
+            <%}%>
+          </span>
+          <span class="signin">
+            <%if(merchantStatus){%>
+              <%if( accountName == ''){%>
+              <a href='/merchants/register' class='signup-btn'>注 册</a>
+              <a href='/merchants/login' class='signin-btn'>登入</a>
+              <%}else{%>
+              <a href='/merchants/dashboard' style="color:#7b37a6;"><%=accountName%></a>
+              <span> | </span>
+              <a href='/merchants/logout' style="color:#7b37a6;">登出</a>
+              <%}%>
+            <%}%>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

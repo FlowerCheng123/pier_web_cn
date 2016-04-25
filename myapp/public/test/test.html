@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <!-- <link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.css">
+	<title>品而支付</title>
+	  <!--<script src="js/checkout.js"></script>-->
+    <!--<script src="js/js-sdk-v1.js"></script>-->
+    <script src="//cdn.bootcss.com/jquery/2.1.3/jquery.min.js"></script>
+</head>
+<body style="padding-top:100px;padding-left:300px;">
+
+<!--src="https://checkout.stripe.com/checkout.js" -->
+<form action="/charge" method="POST">
+  <!--<script src="/js/js-sdk-v1.js" class="pier-button" ></script>-->
+  <script src="http://localhost:4000/js/js-sdk-v1.js" class="pier-button"></script>
+
+</form>
+  <script type="text/javascript">
+        PIER.checkout({
+          money_order: "<%=amount%>",
+          merchant_id: "<%=merchant_id%>",
+          merchant_logo: 'http://pierup.cn/images/android-app-download.png',
+          api_key: "<%=api_id%>",
+          no_order: "<%=order_id%>",
+          name_goods: "<%=name_goods%>",
+          valid_order: "<%=valid_order%>",
+          sign_type: "<%=sign_type%>",
+          sign: "<%=sign%>",
+          dt_order: "<%=dt_order%>",
+          charset: "<%=charset%>",
+          info_order: "<%=info_order%>"
+          // pier_btn_id: 'payBtn'
+        }, function( result ){
+          if( result === 'success' ){
+            //payment success handler
+            alert('支付成功')
+          } 
+          if( result === 'failed' ){
+            //payment failed  handler
+            alert('支付失败')
+          }
+          if( result === 'uncompleted' ){
+            //payment uncomplete handler
+            alert('支付未完成')
+          }
+        });    
+  </script>
+<!-- <div style="width:100px;height:50px;background:#ccc" id="payBtn"></div> -->
+
+<!--<form action="/charge" method="POST" style="margin-left:300px;">
+  <script src="/js/js-sdk-express.js" class="pier-button2" ></script>
+  <script type="text/javascript">
+  var randomString = 'ORTest';
+  for(var i=0; i<6;i++){
+    randomString += Math.ceil( Math.random()*10 );
+  }
+    PIER.initSDK({
+      amount: '1110.01',
+      currency: 'CNY',
+      merchant_id: 'MC0000006975',
+      merchantLogo: 'http://pierup.cn/images/android-app-download.png',
+      api_key: '91baaf6f-5157-11e5-be20-3beae5baf6a4',
+      sdk_type: 'express', 
+      order_id: randomString,
+      order_desc: '原装剑桥口罩',
+      available_time: '10080',
+      sign_type: 'RSA'
+    }, function(){
+
+    });
+  </script>
+</form>-->
+<!--</form>
+   <script  
+       pier-data-amount='1000' 
+       pier-data-currency='CNY' 
+       pier-data-merchant='MC0000000001'
+       class="pier-banner-script"
+       pier-script src="http://pierup.cn:4000/js/pier-banner-v1.js"
+   ></script>-->
+
+   
+   <!--pier-checkout-v2.js-->
+<!--<form action="/charge" method="POST">
+http://localhost:4000/js/stripe-checkout.js
+  <script
+    src="https://checkout.stripe.com/checkout.js" 
+    class="stripe-button"
+    data-key="pk_test_6pRNASCoBOKtIshFeQd4XMUh"
+    data-image="/img/documentation/checkout/marketplace.png"
+    data-name="Stripe.com"
+    data-description="2 widgets"
+    data-amount="90000"
+    data-locale="auto">
+  </script>
+</form>-->
+
+  <!-- <iframe src="http://192.168.1.12:4000/test2.html?connectId=123445" id="myFrame" style="z-index: 9999; display: block; border: 0px none transparent; overflow-x: hidden; overflow-y: auto; visibility: visible; margin: 0px; padding: 0px; -webkit-tap-highlight-color: transparent; position: fixed; left: 0px; top: 0px; width: 100%; height: 100%;background: rgba(0, 0, 0, 0.40392157);"></iframe> -->
+    <!-- <div class="pier-payment-btn" id="pierPay"><img  src="http://pierup.cn/images/pierlogo38.png" style="width:24px;margin-top:4px;margin-left:10px;margin-right:6px;float:left;">
+       <div style="font-size:14px;margin-top:10px;margin-left:50px;">品而付</div>
+    </div>  -->
+</body>
+</html>
+

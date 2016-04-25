@@ -1,0 +1,83 @@
+.title{
+	font-size: 1.2em;
+	margin-top: 2em;
+}
+.mobile-form{
+	padding: 3%;
+}
+.mobile-form label{
+	font-size: 1.0em;
+	font-weight: lighter;
+	text-align: left;
+	color: rgb(160,160,160);
+	width: 100%;
+}
+.mobile-form input, .mobile-form select{
+	height: 3.2em;
+	outline: none;
+	font-size: 1.2em;
+}
+.mobile-form input:focus, .mobile-form select:focus{
+	box-shadow:0px 0px 10px rgb(172,0,24);
+	border-radius: 4px;
+	border-color: rgb(172,0,24);
+	transition: box-shadow 1s;
+	-moz-transition: box-shadow 1s;
+	-webkit-transition: box-shadow 1s;
+	-o-transition: box-shadow 1s;
+}
+.mobile-form .form-group{
+	margin-top: 0px;
+}
+.valid-code input{
+	width: 62%;
+	display: inline-block;
+}
+.valid-code img{
+	width: 34%;
+	margin-left: 2%;
+	height: 3.7em;
+	/*border:1px solid;*/
+	display: inline-block;
+	display: inline-block;
+	margin-top: -0.4em;
+}
+.submit-btn{
+	width: 100%;
+	height: 3.1em;
+	outline: none;
+	font-size: 1.2em;
+	border-radius: 4px;
+	background: rgb(172,0,24);
+	color: #fff;
+	border:1px solid rgb(172,0,24);
+	margin-top: 10px;
+}
+.lay{
+	position:fixed;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	z-index:100;
+	background:rgba(0,0,0,0.6);
+	opacity:1;font-size:10px;
+}
+.disc-number{
+	border-radius: 10px;
+	height: 20px;
+	width: 20px;
+	border:1px solid #000;
+	display: inline-block;
+	font-size: 1.0em;
+	padding-left: 0.35em;
+}
+.zxrhsq-content span{
+	font-size: 1.2em;
+}
+.zxrhsq-content .col-xs-12{
+	margin-top: 1.2em;
+}
+.zxrhsq-content img{
+	margin-top: 0.98em;
+}

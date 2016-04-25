@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+<g>
+	<path fill="#571780" d="M100,188.8c-49,0-88.8-39.8-88.8-88.8S51,11.2,100,11.2S188.8,51,188.8,100S149,188.8,100,188.8z M100,15.2
+		c-46.8,0-84.8,38-84.8,84.8s38,84.8,84.8,84.8s84.8-38,84.8-84.8S146.8,15.2,100,15.2z"/>
+	<g>
+		<rect x="66.9" y="96.1" fill="#571780" width="66.3" height="4"/>
+		<rect x="66.9" y="116.8" fill="#571780" width="66.3" height="4"/>
+		<rect x="98" y="98.1" fill="#571780" width="4" height="45.7"/>
+		
+			<rect x="57.5" y="74.1" transform="matrix(0.639 0.7692 -0.7692 0.639 88.6901 -36.6946)" fill="#571780" width="51.8" height="4"/>
+		
+			<rect x="114.6" y="50.2" transform="matrix(0.7691 0.6392 -0.6392 0.7691 75.5826 -56.9223)" fill="#571780" width="4" height="51.8"/>
+	</g>
+</g>
+</svg>

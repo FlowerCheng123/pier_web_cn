@@ -1,0 +1,86 @@
+<div class="modal-header text-center">
+    <div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-8 col-xs-offset-2">
+				<h4>客户退款信息</h4>
+			</div>
+			<div class="col-xs-2">
+				<i class="fa fa-remove pull-right" ng-click="close()" style="cursor:pointer;"></i>
+			</div>
+		</div>  	
+    </div>
+</div> <!-- close .modal-header -->
+<div class="modal-body" style="padding-left:50px;padding-right:50px;height:200px;" ng-show="loadingData">
+    <div class="container-fluid text-center">
+	    <div class="row">
+		    <div class="col-md-6 col-md-offset-3 text-center">
+				<img src="../images/loading1.gif" /><span>努力加载中……</span>
+			</div>
+		</div>
+    </div>
+</div>
+
+<div class="modal-body" style="padding-left:50px;padding-right:50px;" ng-hide="loadingData">
+	<div class="container-fluid text-center">
+		<div class="row">
+			<div class="col-md-12">
+			    <table class="customer-info-table customer-refund-table">
+				    <tr>
+				    	<td>交易日期：</td>
+				    	<td ng-bind="refundObj.created_on | dateTransfer"></td>
+				    </tr>
+				    <tr>
+				    	<td>商户订单号：</td>
+				    	<td ng-bind="refundObj.id_in_merchant"></td>
+				    </tr>
+				    <tr>
+				    	<td>交易流水号：</td>
+				    	<td ng-bind="refundObj.transaction_id"></td>
+				    </tr>
+				    <tr>
+				    	<td>交易金额：</td>
+				    	<td ng-bind="refundObj.amount | currency : '￥'"></td>
+				    </tr>
+				    <tr>
+				    	<td>已退款金额：</td>
+				    	<td ng-bind="totalRefund | currency : '￥' "></td>
+				    </tr>
+				    <tr ng-show="refundObj.refund_status!=2">
+				    	<td>退款金额：</td>
+				    	<td><input type="text" class="form-control" ng-model="refundAmount" amount-input required/></td>
+				    </tr>
+				    <tr ng-show="refundObj.refund_status!=2">
+				    	<td>备注：</td>
+				    	<td><textarea cols="32" rows="3" class="form-control" ng-model="comments" required></textarea></td>
+				    </tr>
+				    <tr ng-show="refundObj.refund_status!=2">
+				    	<td></td>
+				    	<td><button class=" form-control refund-btn" ng-click="refund()" type="submit" ng-cloak>提交<i class="fa fa-spin fa-gear ng-hide" ng-show="refundFlag"></i></button></td>
+				    </tr>
+			    </table>
+			</div>
+		</div>
+		<div class="row" style="margin-top:60px;" ng-show="refundObj.refund_status!=0">
+			<div class="col-md-10 col-md-offset-1">
+				<hr>
+			    <h3>退款记录</h3>
+				<table class="customer-table customer-transaction-table">
+					<thead>
+						<tr>
+					        <th>日期</th>
+					        <th>金额</th>
+					        <th>备注</th>
+					    </tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="refund in refundList">
+							<td>{{refund.created_on| dateTransfer}}</td>
+							<td ng-bind="refund.amount | currency : '￥'"></td>
+							<td ng-bind="refund.comments"></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+    </div>
+</div>

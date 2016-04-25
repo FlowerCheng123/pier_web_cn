@@ -1,0 +1,28 @@
+<div class="modal-header text-center">
+    <div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-8 col-xs-offset-2">
+				<h4>取消订单</h4>
+			</div>
+			<div class="col-xs-2">
+				<i class="fa fa-remove pull-right" ng-click="dismiss()" style="cursor:pointer;"></i>
+			</div>
+		</div>  	
+    </div>
+</div> <!-- close .modal-header -->
+<div>
+	<div class="modal-body"  >
+		<div class="container-fluid text-center">
+			<div class="row">
+				<div class="col-xs-12">
+					<h4 style="font-size:16px;" class="pull-left">取消订单理由</h4>
+					<select ng-options="template.detail for template in tempateList" ng-model="currentTemp" class="form-control"></select>
+				</div>
+				<div class="col-xs-12 text-center">
+					<p ng-bind="errorMsg" class="error-msg red"></p>
+					<button class="normal-btn " ng-click="cancel()">确认取消</button>
+				</div>
+			</div>
+	    </div>
+	</div>
+</div>

@@ -1,0 +1,22 @@
+{
+  "name": "node_pier",
+  "version": "1.0.0",
+  "description": "'pier node service for chinese project'",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FlowerCheng123/Node-project.git"
+  },
+  "author": "cheng_cong123@163.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FlowerCheng123/Node-project/issues"
+  },
+  "homepage": "https://github.com/FlowerCheng123/Node-project",
+  "dependencies": {
+    "express": "^4.12.4"
+  }
+}

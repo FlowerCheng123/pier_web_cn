@@ -1,0 +1,73 @@
+<div class="container-fluid">
+    <div class="row">
+	    <div class="col-md-12">
+			<p class="doc-title1">server端文档</p>
+			<p>当用户在我们的SDK中支付完成之后，我们将会在我们的后台向商家的后台发送异步通知的请求，告诉商家的服务器，该笔支付已经完成。</p>
+			<hr class="doc-hr">
+		</div>
+		<div class="col-md-12">
+			<p class="doc-title2">异步通知接口</p>
+		</div>
+		<div class="col-md-12">
+			<p class="caption">品而平台对商户的支付请求数据处理完成后，会将处理的结果（成功才通知，失败和异常不通知）数据通过服务器主动通知的方式通知给商户的通知地址（该地址在商户接入时，由商户提供）。通知机制为：最多通知8次，通知的时间间隔为：1,2,4,6,8,10,12分钟。直到通知被商户成功接受为止，如果通知8次也没有被商户接受成功则不再发送。通知服务通过http post方式提交给商户服务端，商户服务端通过数据流读写的方式或者通知字符串。请求参数列表：</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12 ">
+			<table class="doc-param-table">
+				<caption>异步通知的请求参数</caption>
+				<thead>
+					<td>字段名</td>
+					<td>参数名称</td>
+					<td>是否必须</td>
+				</thead>
+				<tr>
+					<td>merchant_id</td>
+					<td>商户订单号</td>
+					<td>是</td>
+				</tr>
+				<tr>
+					<td>charset</td>
+					<td>字符集</td>
+					<td>是</td>
+				</tr>
+				<tr>
+					<td>sign_type</td>
+					<td>签名类型(现在只支持RSA)</td>
+					<td>是</td>
+				</tr>
+				<tr>
+					<td>sign</td>
+					<td>签名</td>
+					<td>是</td>
+				</tr>
+			</table>
+		</div>
+		<div class="col-md-12 ">
+			<table class="doc-param-table">
+				<caption>商户接到通知后返回结果</caption>
+				<thead>
+					<td>字段名</td>
+					<td>参数名称</td>
+					<td>是否必须</td>
+				</thead>
+				<tr>
+					<td>ret_code</td>
+					<td>交易结果代码(其中ret_code为“0000”为成功，品而服务器就会停止通知，否则继续通知直到通知机制完成。)</td>
+					<td>是</td>
+				</tr>
+				<tr>
+					<td>ret_msg</td>
+					<td>交易结果描述</td>
+					<td>是</td>
+				</tr>
+			</table><br>
+			<pre class="doc-script">
+	<span class="gray">//回调中返回成功结果</span>
+	{
+	   "ret_code":"0000",
+	   "ret_msg":"OK"
+	}</pre>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,29 @@
+<%include ../header%>
+<div class="dashboard-wrap" ng-app="MerchantApp" ng-controller="DashboardController">
+    <div class="sidebar">
+	    <div class="sidebar-fence" ng-repeat="sidebar in sidebars">
+		    <div class="title" ng-bind="sidebar.title"></div>
+		    <ul ng-show="sidebar.hasSub">
+		    	<li ng-repeat="item in sidebar.subItems" ng-bind="item.title" ng-class="item.style" ng-click="switchPanel(item)"></li>
+		    </ul>
+	    </div>
+	  
+    </div>
+    <div class="right-content">
+	    <ui-view></ui-view>
+    </div>
+</div>
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+<script src="../pier_merchant/js/dashboard.js"></script>
+<script src="../pier_merchant/js/business.js"></script>
+<% if(statusBit < 13 ){%>
+<script src="../pier_merchant/js/activation.js"></script>
+<%}else{%>
+<script src="../pier_merchant/js/account.js"></script>
+<%}%>
+<script src="../bower_components/echarts/build/dist/echarts.js"></script>
+<script src="../pier_merchant/helper/data.js"></script>
+<script src="../pier_merchant/helper/pier-util.js"></script>
+<div class="container-fluid"></div>
+<%include ../footer-2%>

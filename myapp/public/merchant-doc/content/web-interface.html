@@ -1,0 +1,29 @@
+<div class="container-fluid">
+    <div class="row">
+	    <div class="col-md-12">
+			<p class="doc-title1">web 端接入</p>
+			<hr class="doc-hr">
+		</div>
+		<div class="col-md-12">
+			<p>当商户在品而的网站上注册并签约完成之后，可以接入我们JavaScript 的SDK，您也可以通过下载我们的demo以便更好的整合我们的SDK。</p>
+			<p>具体的步骤如下:</p>
+			<ul class="number-list">
+				<li>
+				   在商户的支付页面引入我们的JavaScript SDK的地址：
+				   <pre class="doc-script" style="padding-bottom: 0px;">
+&lt;script  src='https://pierup.cn/lib//pier_sdk_v1.min.js' class="pier-button" &gt;&lt;/script &gt;
+				   </pre>
+			    </li>
+				<li>在进入支付页面的时候，您需要调用我们的SDK中的方法进行初始化。根据文档，您必须初始化一些参数，您才能进行支付方法的调用。</li>
+				<li>在方法调用完成之后，我们将会给一个回调交给商户进行处理支付页面。</li>
+				<li>当用户在品而支付完成之后，我们将会主动去调用商户在注册的时候给品而的通知地址，去通知商户通知已经完成。</li>
+			</ul>
+			<hr class="doc-hr">
+		</div>
+		<div class="col-md-12" style="height:400px;">
+			<p class="doc-title2">
+				<a ui-sref="web_doc"> Web demo 接入及下载</a>
+			</p>
+		</div>
+	</div>
+</div>

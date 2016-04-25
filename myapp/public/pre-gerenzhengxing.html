@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>征信报告</title>
+</head>
+<body>
+  <form action="http://pierup.cn/mobile/postzhengxin" method="POST" id="postForm">
+      <input type="hidden" value="{{session_token}}" name="session_token">
+      <input type="hidden" value="{{user_id}}" name="user_id">
+  </form>
+  <script type="text/javascript">
+   (function(){
+     document.getElementById('postForm').submit();
+   })()
+  </script>
+	
+</body>
+</html>

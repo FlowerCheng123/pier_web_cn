@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+      <title>借款及服务协议</title>
+      <style type="text/css">
+      body{
+            padding: 0.2rem;
+            counter-reset:section;
+            line-height: 0.3rem;
+            font-size: 0.24rem;
+      }
+        h4 {counter-reset:subsection;}
+        ol>li { counter-reset: nextSection;}
+        h4:before{
+            counter-increment:section;
+            content:" ";
+        }
+        ol>li:before{
+            counter-increment:subsection;
+            content:counter(section) "." counter(subsection) " ";
+      }
+      ol>li ul li:before{
+            counter-increment:nextSection;
+            content:counter(section) "." counter(subsection) "." counter(nextSection);
+      }
+      ol{
+            list-style-type: none;
+            padding-left: 0;
+      }
+      ol li{
+            margin-top: 0.1rem;
+      }
+      ul{
+            list-style-type: none;
+            padding-left: 0.1rem;
+      }
+      .red{
+            color: red;
+      }
+      .underline{
+            text-decoration: underline;
+            padding-left: 5px;
+            padding-right:5px;
+      }
+
+      </style>
+  <script src="/javascripts/font-size.js"></script>
+</head>
+<body>
+    <p>甲方（出借方）：<span id="partyA"></span></p>
+    <p>乙方（借款人）：<span id="partyB"></span></p>
+    <p>丙方（居间方）：上海品从金融信息服务有限公司</p>
+    <p>甲方拥有资金愿意出借，乙方有借款需求，丙方为甲乙双方提供信息媒介平台，促成交易。甲乙丙三方因此达成以下协议：</p>
+    <h4>第1条名词定义</h4>
+    <ol>
+      <li>甲方为出借方：为符合中国法律规定的具有完全民事权利能力和民事行为能力，能独立行使和承担协议项下权利义务的自然人。</li>
+      <li>乙方为借款人：为符合中国法律规定的具有完全民事权利能力和民事行为能力，能独立承担本协议项下权利义务的自然人。</li>
+      <li>丙方为网络技术服务居间方：为甲方和乙方提供居间信息媒介服务，报告交易状况，协助甲乙交易达成的互联网平台。</li>
+      <li>应付未付金额：指乙方应向甲方偿还而未支付偿还的本金及手续费。</li>
+    </ol>
+
+    <h4>第2条各方权利和义务</h4>
+    <ol>
+          <li>甲，乙各方在丙方提供的网络平台对本协议下出借和借款项进行操作成功确认时，即视为该方接受本协议条款内容并受此之拘束，本协议即成立。
+          </li>
+          <li>甲方通过丙方网络平台向乙方成功出借资金到乙方账户时，即为协议生效之时日。</li>
+          <li>甲，乙各方应妥善保管在丙方注册的用户信息，自行承担因注册用户名和密码丢失、泄露或允许他人使用所产生的后果。任何一方通过其用户名和密码登陆的任何操作均视为该方本人的真实意思表示。
+          </li>
+          <li>甲，乙各方确保在丙方网络平台的操作真实、准确，信息填写完整无误。因操作不当或填写信息有误而造成的法律后果、经济损失均由各方自行承担。
+          </li>
+          <li>甲，乙各方应基于合法目的使用丙方网络信息服务平台，不得以此从事任何违法活动。</li>
+          <li>甲方应在本协议签订之日将足额借款资金支付给乙方，并同时支付丙方服务费30元,甲方因此有权利就出借的款项按约定时间收回并获得相应手续费。</li>
+          <li> 乙方成功借到款项后必须按照期限足额向甲方偿还本金并支付相应手续费。</li>
+          <li>丙方为甲乙各方提供借贷款信息技术服务，保证信息及时准确有效，不截留任何一方的资金款项，也不作为任何一方的担保。丙方可就其提供的服务向甲方收取服务费用。</li>
+    </ol>
+
+    <h4>第3条出借款和还款</h4>
+    <ol >
+          <li>
+<pre class="red">借款基本信息
+分期月数
+<span id="terms" class="underline"></span>个月
+每月还款金额
+¥<span id="payment" class="underline"></span>
+提现金额
+¥<span id="withdrawals" class="underline"></span></pre>
+          </li>
+          <li>还款日：参照第2、2条协议生效之日即账单生成之日。本合同手续费从款项自该笔账单生成之日起开始计算；还款日为每个月与账单生成日对应的日期，如当月无此日期，则为当月的最后一天，节假日不顺延。</li>
+          <li>付款还款方式：
+                <ul>
+                      <li>甲方通过丙方合作方连连银通电子支付有限公司并授权此第三方支付机构，从在丙方绑定的银行卡账户将出借款划账给乙方在丙方绑定的银行卡账户。甲方同时划账30元服务费用至丙方账户。</li>
+                      <li>乙方通过丙方合作方连连银通电子支付有限公司并授权此第三方支付机构，从在丙方绑定的银行卡账户在每个还款日将相应还款金额划账给甲方在丙方绑定的银行卡账户。</li>
+                </ul>
+          </li>
+          <li>乙方如果在每个还款日之前还款并不改变每月还款金额，本协议不支持一次性偿还本金和手续费。</li>
+          <li>甲方在资金出借、转让过程中产生的相关税费，乙方在还款时产生的税费由各方自己承担并向主管税务机关申报、缴纳</li>
+          <li>丙方及时更新相关信息并通知甲乙各方。并有权收取服务费用。</li>
+    </ol>
+    <h4>第4条债权债务的转移</h4>
+    <ol>
+          <li>甲方可以根据自己的意愿进行本协议下其对乙方债权的转让，甲方转让对乙方的债权应以有效方式通知乙方和丙方。在甲方的债权转让后，乙方需对债权受让人继续履行本协议下其对甲方的还款义务。丙方应及时更新网络上的相关信息。</li>
+          <li>乙方不得将本合同项下的任何权利义务转让给其他任何方。</li>
+          <li>您在注册时向本软件提交的姓名、身份证号码及手机号是您在本软件的唯一识别信息。您注册成功后，除非本协议另有约定，您不得将姓名和密码、身份证号码及手机号转让或授权第三方使用。</li>
+    </ol>
+
+    <h4>第5条协议的变更和解除</h4>
+    <p>本协议一旦生效不得变更和解除，除非经各方协商一致同意。</p>
+    <h4>第6条声明与保证</h4>
+    <ol>
+      <li>甲方声明与保证
+      <p>甲方保证其所用于出借的资金为自有资金，来源合法，且甲方是该资金的合法支配权人，如第三方对资金归属、支配权、合法性等主张异议，给乙方和丙方造成损失的，甲方应当赔偿损失，并不得要求借款所带来的手续费收益。</p>
+      </li>
+      <li>乙方声明与保证
+      <p>乙方保证其所借用的资金，严格按照本协议的约定合法使用，不得将借用资金以更高的手续费转贷给任何第三方，乙方按约定分期限向甲方偿还本金并支付手续费。如违约应当支付本金，手续费，违约金和罚息，如因此引起法律诉讼，还应承担甲方和丙方的相关诉讼费用。</p>
+      </li>
+      <li>丙方声明与保证
+      <p>丙方声明为甲乙双方提供的网络信息技术服务仅为促成双方交易的居间服务，不具有任何形式的资金占用及使用情况。本协议项下的借款还款责任由甲乙双方承担，丙方不承担任何担保、保证、及其他还款责任。</p>
+      </li>
+      
+    <h4>第7条违约责任及解决争议方式</h4>
+    <ol>
+          <li>若乙方逾期还款，还需向甲方支付违约金和罚息。</li>
+          <li>逾期违约金和罚息计算方法如下;
+             <ul>
+                  <li>逾期违约金：当月发生逾期的，按照应付未付金额的5%计算，每月单独计算。</li>
+                  <li>罚息：逾期每日按应付未付金额的32%收取罚息，从逾期之日起计算</li>
+             </ul>
+          </li>
+          <li>违约金和罚息应于每月的第 1 个日历日前支付，否则，甲方有权按本协议约定的罚息利率按月再计收复利。</li>
+          <li>乙方如违约不偿还甲方本金和手续费，还将承担相应的信用风险。视其违约程度轻重，丙方有义务定期更新降低乙方的信用额度，直至取消对乙方的授信；丙方有权将乙方的“逾期记录”、“恶意行为”或“不良情况”记入公民征信系统，或将乙方违约失信的相关信息向媒体、用人单位、公安机关、检查机关、法律机构披露，丙方不承担任何法律责任。</li>
+          <li>任何一方违约，违约方应承担因违约致使其他各方产生的费用和损失，包括但不限于调查、诉讼费、律师费等。如违约方为乙方的，甲方有权立即解除本协议，并要求乙方立即偿还未偿还的应付未付金额、违约金、罚息。</li>
+          <li>乙方如违约逾期，每期还款均应按照如下顺序清偿：
+              <ul>
+                    <li>根据本协议产生的其他全部费用；</li>
+                    <li>罚息；</li>
+                    <li>拖欠的手续费；</li>
+                    <li>拖欠的本金；</li>
+                    <li>正常的手续费；</li>
+                    <li>正常的本金；</li>
+              </ul>
+          </li>
+          <li>甲方若未及时向丙方支付服务费用，丙方有权利在乙方偿还甲方借款时扣留相应费用。丙方保留追加相应利息的权利。</li>
+          <li>甲乙双方约定友好协商争议问题，尽量达成和解；如不能达成和解，需提交协议签署地即丙方所在地法院处理。</li>
+    </ol>
+</body>
+<script type="text/javascript">
+      (function(){
+         var getQueryParam = function( name ){
+            return decodeURIComponent(window.location.search).split(name+'=')[1].split('&')[0];
+         }
+         var partyA = getQueryParam('partyA'),
+         partyB = getQueryParam('partyB'),
+         terms = getQueryParam('terms'),
+         payment = getQueryParam('payment'),
+         withdrawals = getQueryParam('withdrawals');
+         document.getElementById('partyA').innerHTML = partyA;
+         document.getElementById('partyB').innerHTML = partyB;
+         document.getElementById('terms').innerHTML = terms;
+         document.getElementById('payment').innerHTML = payment;
+         document.getElementById('withdrawals').innerHTML = withdrawals;
+         console.log( 'withdrawals', withdrawals );
+      })()
+</script>
+</html>

@@ -1,0 +1,78 @@
+
+<div class="modal-header text-center">
+    <div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-8 col-xs-offset-2">
+				<h4>查看订单信息</h4>
+			</div>
+			<div class="col-xs-2">
+				<i class="fa fa-remove pull-right" ng-click="dismiss()" style="cursor:pointer;"></i>
+			</div>
+		</div>  	
+    </div>
+</div> <!-- close .modal-header -->
+<div ng-controller="ShowLogistic2Controller">
+
+	<div class="modal-body" style="padding-left:50px;padding-right:50px;" >
+		<div class="container-fluid text-center">
+			<div class="row ">
+				<div class="col-md-12">
+				    <table class="customer-info-table customer-refund-table">
+					    <tr>
+					    	<td>订单日期：</td>
+					    	<td ><span ng-bind="createdOn|dateTransfer"></td>
+					    </tr>
+					    <tr>
+					    	<td>收货人：</td>
+					    	<td ><span ng-bind="receiverName"></span>&nbsp;&nbsp;<span ng-bind="receiverPhone"></span></td>
+					    </tr>
+					    <tr>
+					    	<td>收货地址：</td>
+					    	<td ng-bind="receiverAddress"></td>
+					    </tr>
+					    <tr>
+					    	<td>商品金额：</td>
+					    	<td ng-bind="subTotal | currency:'￥'"></td>
+					    </tr>
+					    <tr>
+					    	<td>商品费用：</td>
+					    	<td ng-bind="fee| currency:'￥'"></td>
+					    </tr>
+					    <tr>
+					    	<td>商品总价：</td>
+					    	<td ng-bind="grandTotal| currency:'￥'"></td>
+					    </tr>
+					    <tr>
+					    	<td>&nbsp;</td>
+					    	<td></td>
+					    </tr>
+					     <tr>
+					    	<td></td>
+					    	<td><span ng-bind="errorMsg" class="error"></span></td>
+					    </tr>
+				    </table>
+				</div>
+				<div class="col-md-12">
+					<h4>物流信息</h4>
+					<table class="order-tracking-table">
+                      <tr ng-repeat="track in trackingList">
+                        <td>
+                          <div class="stick">
+                            <div class="disc"></div>
+                          </div>
+                        </td>
+                        <td>
+                         
+                        </td>
+                        <td class="text-left">
+                          <h4 ng-bind="track.tracking_desc" ></h4>
+                          <p ng-bind="track.occur_time | dateTransfer" ></p>
+                        </td>
+                      </tr>
+                    </table>
+				</div>
+
+			</div>
+	    </div>
+	</div>
+</div>

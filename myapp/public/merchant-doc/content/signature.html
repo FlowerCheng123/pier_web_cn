@@ -1,0 +1,141 @@
+<div class="container-fluid">
+    <div class="row">
+	    <div class="col-md-12">
+			<p class="doc-title1">签名机制介绍</p>
+			<hr class="doc-hr">
+		</div>
+		<div class="col-md-12">
+			<p class="doc-title2">1.RSA安全签名机制说明</p>
+			<p>在RSA签名时，需要<a ng-click="$state.go('key_gener')">私钥和公钥</a>一起参与签名。私钥与公钥皆是客户通过OPENSSL来生成得出的。客户把生成出的公钥与品而的技术人员配置好的品而支付的公钥做交换。因此，在签名时，客户要用到的是客户的私钥及品而支付的公钥。</p>
+			<ul class="disc-list">
+				<li>
+					请求时签名
+				</li>
+				<p>商户当拿到请求时的待签名字符串后，把待签名字符串与商户的私钥一同放入RSA签名函数中进行签名运算，从而得到签名结果字符串。</p>
+				<li>通知或返回时验证签名</li>
+				<p>商户当获得到通知或返回时的待签名字符串后，把待签名字符串、品而提供的公钥、品而通知返回参数中的参数sign的值三者一同放入RSA签名函数中进行非对称的签名运算，来判断签名是否验证通过。</p>
+			</ul>
+		</div>
+		<div class="col-md-12">
+			<p class="doc-title2">2.品而支付具体实施</p>
+			<ul class="number-list">
+				<li>
+					秘钥分发
+					<ul class="disc-list">
+						<li>商户和品而签约时，由品而分配给商家一组或者多组秘钥（api_secret_key），每个秘钥都有一个索引（api_id），商户要妥善保存该组秘钥，不能泄露。</li>
+						<li>商户要生成一组用于签名的RSA秘钥，将公钥告知品而，自己保存私钥。商家请求品而的支付服务时，要用自身的私钥签名，品而用该商家上传的公钥验签。</li>
+						<li>品而的服务器会生成一组用于签名的RSA秘钥，品而将公钥告知商家，自己保存私钥。待支付成功后，品而会采用自身的私钥生成签名，商家用品而下发的公钥验证签名。</li>
+					</ul>
+				</li>
+				<li>
+					生成待签名字符串
+					<ul class="disc-list">
+						<li>需要参与签名的参数
+							<ul class="decimal-list">
+								<li>商家请求品而的签名参数
+									<table class="doc-table1">
+										<tr><td>商户标识号：</td><td>merchant_id</td></tr>
+										<tr><td>商户秘钥索引：</td><td>api_id</td></tr>
+										<tr><td>商户秘钥：</td><td>api_secret_key</td></tr>
+										<tr><td>编码字符集：</td><td>charset</td></tr>
+										<tr><td>订单号：</td><td>no_order</td></tr>
+										<tr><td>交易金额：</td><td>money_order（精确到小数点后两位）</td></tr>
+										<tr><td>商品名称：</td><td>name_goods</td></tr>
+										<tr><td>签名算法类型：</td><td>sign_type</td></tr>
+										<tr><td>商户订单时间：</td><td>dt_order(如果非空)</td></tr>
+										<tr><td>订单描述：</td><td>info_order(如果非空)</td></tr>
+										<tr><td>订单有效时间：</td><td>valid_order(如果非空)</td></tr>
+									</table>
+								</li>
+								<li>品而回调商家的签名参数
+									<table class="doc-table1">
+										<tr><td>商家标识号：</td><td>merchant_id</td></tr>
+										<tr><td>订单号：</td><td>no_order</td></tr>
+										<tr><td>字符集：</td><td>charset</td></tr>
+										<tr><td>签名算法类型：</td><td>sign_type</td></tr>
+									</table>
+								</li>
+							</ul>
+						</li>
+						<li>生成待签名字符串
+							<p>对参与签名的各个参数，参数名按字母序排序。并以“&”连接生成字符串。对于如下的参数：</p>
+							<pre>
+    "merchant_id": "MC0000001409",
+    "no_order": "FLOWER0000000127",
+    "money_order": 0.01,
+    "name_goods": "测试商品",
+    "info_order": "两只毛笔和一只铅笔",
+    "dt_order": "20160311164511",   
+    "api_id": "787fa484-1a3f-11e5-ba25-3a22fd90d682",
+    "api_secret_key":"mk-test-787fa390-1a3f-11e5-ba25-3a22fd90d682",
+    "charset":"UTF-8",
+    "valid_order":"10080",
+    "sign_type":"RSA"</pre>
+							
+							<p>生成的待签名字符串为：</p>
+							<pre>
+api_id=787fa484-1a3f-11e5-ba25-3a22fd90d682&api_secret_key=mk-test-787fa390-1a3f-11e5-ba25-3a22fd90d682&charset=UTF-8&dt_order=20160311164511&info_order=两只毛笔和一只铅笔&merchant_id=MC0000001409&money_order=0.01&name_goods=测试商品&no_order=FLOWER0000000117
+</pre>
+							
+							<p>备注：对应于该api_id的秘钥为：（mk-test-787fa390-1a3f-11e5-ba25-3a22fd90d682）</p>
+						</li>
+						<li>签名生成或者验签
+							<p>采用的算法是：SHA1WithRSA（目前只支持RSA）</p>
+						</li>
+					</ul>
+				</li>
+				
+			</ul>
+		</div>
+		<div class="col-md-12">
+			<p class="doc-title2">3、Demo</p>
+			<p>签名生成(JAVA)：</p>
+			<pre class="doc-script">
+  /** 
+    * rsa 签名 
+    * @param content 待签名数据 
+    * @param privateKey 商户私钥 
+    * @param encode 字符集编码 
+    * @return 签名值 
+    */  
+   public static String sign(String content, String privateKey, String encode) throws Exception  {  
+	   PKCS8EncodedKeySpec priPKCS8 = new PKCS8EncodedKeySpec(Base64.decodeBase64(privateKey));   
+      KeyFactory keyf = KeyFactory.getInstance("RSA");  
+      PrivateKey priKey = keyf.generatePrivate(priPKCS8);  
+  
+      Signature signature = Signature.getInstance("SHA1WithRSA");  
+      signature.initSign(priKey);  
+      signature.update(content.getBytes(encode));  
+      byte[] signed = signature.sign();  
+      String sign = Base64.encodeBase64String(signed);
+      logger.info("signString: " + sign);
+      return sign; 
+    } 
+			</pre>
+<p>验证签名：</p>
+			<pre class="doc-script">
+    /** 
+    * RSA验签名检查 
+    * @param content 待签名数据 
+    * @param sign 签名值 
+    * @param publicKey 分配给开发商公钥 
+    * @param encode 字符集编码 
+    * @return 布尔值 
+    */  
+   public static boolean doCheck(String content, String sign, String publicKey, String encode) throws Exception {  
+    	KeyFactory keyFactory = KeyFactory.getInstance("RSA");  
+      byte[] encodedKey = Base64.decodeBase64(publicKey);  
+      PublicKey pubKey = keyFactory.generatePublic(new X509EncodedKeySpec(encodedKey));  
+  
+      Signature signature = Signature.getInstance("SHA1WithRSA");  
+      signature.initVerify(pubKey);  
+      signature.update(content.getBytes(encode));  
+      byte[] originalSign = Base64.decodeBase64(sign);
+      logger.info("Original sign length is: " + originalSign.length);
+      boolean bverify = signature.verify(originalSign);  
+      return bverify;     
+    }  
+			</pre>
+		</div>
+	</div>
+</div>

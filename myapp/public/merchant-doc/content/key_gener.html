@@ -1,0 +1,54 @@
+<div class="container-fluid">
+    <div class="row">
+	    <div class="col-md-12">
+			<p class="doc-title1">公钥和私钥的生成</p>
+			<hr class="doc-hr">
+		</div>
+		<div class="col-md-12">
+			<p class="doc-title2">1、生成私钥</p>
+		</div>
+		<div class="col-md-12">
+			<p class="caption">在command line中键入：<span style="text-decoration: underline;color:red">openssl genrsa -out rsa_private_key.pem 1024</span></p>
+
+		</div>
+		<div class="col-md-12">
+			<p class="doc-title2">2、将原始私钥转换为pkcs8格式</p>
+		</div>
+		<div class="col-md-12">
+			<p class="caption">在command line中键入：<span style="text-decoration: underline;color:red">openssl pkcs8 -topk8 -inform PEM -in rsa_private_key.pem -outform PEM -nocrypt</span></p>
+			<pre>
+-----BEGIN PRIVATE KEY-----
+MIICeAIBADANBgkqhkiG9w0BAQEFAASCAmIwggJeAgEAAoGBANX4P18ox6uIwRwM
+yvZKz6BIWwX2T1J4YsI2dTGP6j6qOYfrY9eElvAii/D3gq+trf/QMhgZaDK7HMXB
+KpEawcsFleRaRrrUbx4MU22gDeLUCcITKNaXGMB6H7ztzqUSnWpNChEuMu2EV7Ak
+mwKzaUWHgA0/RmS5OR0xS8X3JiYZAgMBAAECgYEAo7rbm1CUQbFau8EaSg8DA856
+QHyzRBM01xJe6TcL8znE3joEY3VlHooA9bogOZg4TkkdHA3NCwzdPoHKtdB4uyA0
+JCe2pIRacdGhoOQndRmSfykJv4w8f82+xi4gNlrHQH1ajH6/5kIrVgc/j8L/EWcL
+EAE/ohvciZNlG2jXRVECQQD5nas2vgGVO1KDrckoPOnQ/KxeEmoT+tnCJz0HFQkz
+0rC+oNz5GOkDBu7yHfSM30iPs1iC9GU6rt45PJRZer8VAkEA23EwhH7Vn9n5the6
+CCHJCXb8J7ntX1ZMeen4xd+sPctDusbGhPLectcggsYJ0u22l8F69pFaCl34THQM
+03Hr9QJBAOcivWCiTnruBHkUGflddjDjV4SATqOTm8IxbUw6iVvoU2shL5ylGVaJ
+PAcL/9/V/a26p1ITlgzh0bp0QvYcOAUCQQC241MoWfz4yNZRaNzmwiGm/b+R7Gdl
+OatrQBDR+WS365x7Igd57mBvHdQ+qYaugOfY+qvcq697TG4Qaff2kc+xAkA/PW1A
+v3VINpSJincg0VlON9g7X4oPf/mm3mgh7Slk/oUy8bNVRwGPap07kfKIL0jZlglV
+crB26Qv6a0jUuH/U
+-----END PRIVATE KEY-----</pre>
+			<p>将打印在控制台的私钥拷出来作为私钥。</p>
+		</div>
+		<div class="col-md-12">
+			<p class="doc-title2">3、根据私钥生成公钥</p>
+		</div>
+		<div class="col-md-12">
+			<p class="caption">在command line中键入：<span style="text-decoration: underline;color:red">openssl rsa -in rsa_private_key.pem -pubout -out rsa_public_key.pem</span></p>
+			<p class="caption">在command line中键入：<span style="text-decoration: underline;color:red">cat rsa_public_key.pem</span></p>
+<pre>
+-----BEGIN PUBLIC KEY-----
+MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDV+D9fKMeriMEcDMr2Ss+gSFsF
+9k9SeGLCNnUxj+o+qjmH62PXhJbwIovw94Kvra3/0DIYGWgyuxzFwSqRGsHLBZXk
+Wka61G8eDFNtoA3i1AnCEyjWlxjAeh+87c6lEp1qTQoRLjLthFewJJsCs2lFh4AN
+P0ZkuTkdMUvF9yYmGQIDAQAB
+-----END PUBLIC KEY-----
+</pre>
+		</div>
+	</div>
+</div>

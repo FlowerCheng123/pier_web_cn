@@ -1,0 +1,77 @@
+<div class="customer-container dashboard-container ">
+	<div class="container-fluid">
+		<div class="row row1">
+			<div class="col-md-4 col-md-offset-1">
+				<label for="customerStartDate">开始日期</label>
+                <p class="input-group">
+		            <input id="customerStartDate" name="customerStartDate" type="text" class="form-control" uib-datepicker-popup="{{calender.dateFormat}}" ng-model="startDate" datepicker-options="calender.dateOptions" close-text="Close" is-open="calender.opened.startDate" placeholder="{{calender.dateFormat}}" ng-click="calender.open($event, 'startDate')" max-date="maxDate" required> 
+		            <span class="input-group-btn">
+		                <button type="button" class="btn btn-default" ng-click="calender.open($event, 'startDate')"><i class="glyphicon glyphicon-calendar"></i></button>
+		            </span>
+                </p>
+			</div>
+			<div class="col-md-4">
+	            <label for="customerEndDate">结束日期</label>
+	            <p class="input-group">
+		            <input type="text" id="customerEndDate" name="customerEndDate" class="form-control mer-input" uib-datepicker-popup="{{calender.dateFormat}}" ng-model="endDate" datepicker-options="calender.dateOptions" close-text="Close" is-open="calender.opened.endDate" placeholder="{{calender.dateFormat}}" ng-click="calender.open($event, 'endDate')" max-date="maxDate" required> 
+		            <span class="input-group-btn">
+		                <button type="button" class="btn btn-default pull-right" ng-click="calender.open($event, 'endDate')"><i class="glyphicon glyphicon-calendar"></i></button>
+		            </span>
+	            </p>
+			</div>
+			<div class="col-md-3">
+				<button type="button" class="form-control date-search-btn" ng-click="getDashboardInfo()"><i class="fa fa-search"></i>&nbsp;Search</button>
+			</div>
+		</div>
+		<div ng-show="loadingData">
+			<div class="row" style="height:400px;padding-top:80px;">
+				<div class="col-md-6 col-md-offset-3 text-center">
+					<img src="../images/loading1.gif" /><span>努力加载中……</span>
+				</div>
+			</div>
+		</div>
+		<div ng-hide="loadingData">
+		    <div class="row row2 text-center">
+			    <div class="col-md-4">
+				    <h3 class="title" ng-bind="totalTransactions"></h3>
+				    <p>交易数</p>
+			    </div>
+			    <div class="col-md-4">
+				    <h3 class="title" ng-bind="totalRevenue | currency: '￥'"></h3>
+				    <p>营业收入</p>
+			    </div>
+			    <div class="col-md-4">
+				    <h3 class="title" ng-bind="totalCustomers"></h3>
+				    <p>客户数</p>
+			    </div>
+			    <div class="col-md-12 text-left">
+			        <!--date type-->
+				    <div class="btn-group mer-date-buttons">
+				        <label ng-class="{ 'mer-date-active': dateType.D, 'mer-date-inactive': dateType.M }" class="btn" ng-click="chooseDataType('D')" ng-model="radioModel" uib-btn-radio="'Left'">Day</label>
+				        <label ng-class="{ 'mer-date-active': dateType.M, 'mer-date-inactive': dateType.D}" class="btn" ng-click="chooseDataType('M')" ng-model="radioModel" uib-btn-radio="'Right'">Month</label>
+				    </div><!--close.date type-->
+			    </div>
+
+		    </div>
+
+
+	        <div class="row row2">
+		        <div class="col-md-12 col-sm-12">
+		            <div class="panel panel-default">
+		                <div  style="width:638px; height:320px;" id="revenueGraphic"></div>
+			        </div>
+		        </div>
+		        <div class="col-md-12 col-sm-12">
+		            <div class="panel panel-default">
+		                <div  style="width:638px; height:320px;" id="customerGraphic"></div>
+			        </div>
+		        </div>
+		        <div class="col-md-12 col-sm-12">
+		            <div class="panel panel-default">
+		                <div  style="width:638px; height:320px;" id="transactionGraphic"></div>
+			        </div>
+		        </div>
+		    </div>
+		</div>
+	</div>
+</div>

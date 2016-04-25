@@ -1,0 +1,202 @@
+<div class="basic-info-container">
+	<div class="container-fluid loading-container" ng-show="loadingData" style="height:580px;">
+		<div class="row">
+	        <img src="../images/loading1.gif" /><span>努力加载中……</span>
+		</div>
+	</div>
+	<div class="container-fluid" ng-hide="loadingData">
+	    <div class="row row1">
+		    <div class="col-md-12 text-center">
+			  <h4>账户基本信息</h4>
+		    </div>
+	    </div>
+	    <div class="row row2" ng-hide="editStatus">
+		    <div class="col-md-offset-10 col-md-2">
+			    <i class="fa fa-lg fa-edit" style="margin-top:12px;font-size:20px;cursor:pointer;" title="编辑" ng-click="changeEditStatus()"></i>
+		    </div>
+		    <div class="col-md-12">
+			    <table class="basic-info-table"> 
+                    <tr>
+                    	<td>注册邮箱：</td>
+                    	<td ng-bind="profile.email"></td>
+                    </tr>
+                    <tr>
+                    	<td>企业名称：</td>
+                    	<td ng-bind="profile.business_name"></td>
+                    </tr>
+                    <tr>
+                    	<td>公司网站：</td>
+                    	<td ng-bind="profile.web_site"></td>
+                    </tr>
+                    <tr>
+                    	<td>联系人：</td>
+                    	<td ng-bind="profile.agent_name"></td>
+                    </tr>
+                    <tr>
+                    	<td>手机：</td>
+                    	<td ng-bind="profile.agent_phone"></td>
+                    </tr>
+                    <tr>
+                    	<td>座机：</td>
+                    	<td ng-bind="profile.office_phone"></td>
+                    </tr>
+                    <tr>
+                    	<td>联系地址：</td>
+                    	<td ng-bind="allAddress"></td>
+                    </tr>
+                    <tr>
+                    	<td>邮编：</td>
+                    	<td ng-bind="profile.postal_code"></td>
+                    </tr>
+			    </table>
+		    </div>
+	    </div>
+
+	    <div class="row row2" ng-show="editStatus">
+		    <div class="col-md-12">
+			    <form class="info-form">
+				    <article class="unEditableText"> 
+					    <div class="info-group">
+						    <section class="section1">
+					    	    <label for="company">注册邮箱：</label>
+						    </section>
+						    <section class="section2 text-left">
+					    	    <label  ng-bind="profileEdit.email"></label>
+						    </section>
+						    <section class="section3" >
+						    </section>
+					    </div>
+				    </article>
+		    	    <article class="unEditableText"> 
+					    <div class="info-group">
+						    <section class="section1" >
+					    	    <label for="company">企业名称：</label>
+						    </section>
+						    <section class="section2" style="">
+					    	    <label  ng-bind="profileEdit.business_name"></label>
+						    </section>
+						    <section class="section3" >
+						    </section>
+					    </div>
+				    </article>
+				    <article> 
+					    <div class="info-group">
+						    <section class="section1">
+							    <label for="website">公司网站：</label>
+						    </section>
+						    <section class="section2">
+					    	    <input class="form-control " placeholder="请输入您的公司网站" name="website"  id="website" ng-model="profileEdit.web_site"  required/>
+						    </section>
+						    <section class="section3" >
+						    </section>
+					    </div>
+				    </article>
+				    <article> 
+					    <div class="info-group">
+						    <section class="section1">
+							    <label for="agentName">联系人：</label>
+						    </section>
+						    <section class="section2">
+					    	    <input class="form-control " placeholder="请输入您的公司网站" name="agentName"  id="agentName" ng-model="profileEdit.agent_name"  required maxlength="20" />
+						    </section>
+						    <section class="section3" >
+						    </section>
+					    </div>
+				    </article>
+				    <article> 
+					    <div class="info-group">
+						    <p class="error-message" ng-show="phoneError" ng-bind="phoneErrorMsg"></p> 
+						    <section class="section1">
+							    <label for="agentPhone">手机：</label>
+						    </section>
+						    <section class="section2">
+					    	    <input class="form-control " placeholder="请输入联系人手机" name="agentPhone"  id="agentPhone" ng-model="profileEdit.agent_phone"  required maxlength="{{phoneLength}}" number-only-input/>
+						    </section>
+						    <section class="section3" >
+						    </section>
+					    </div>
+				    </article>
+    			    <article> 
+					    <div class="info-group">
+						    <section class="section1">
+							    <label for="agentAuthCode">手机验证码：</label>
+						    </section>
+						    <section class="section2">
+					    	    <input class="form-control valid-code-input" placeholder="请输入短信验证码" name="smsCode" id="smsCode" ng-model="smsCode" maxlength="4" required/>
+						    	<button class="valid-code-btn" type="button" ng-disabled="hasSendCode" ng-click="getValidCode()"><span ng-bind="timeHandler"></span>&nbsp;&nbsp;<i class="fa fa-gear fa-spin" ng-show="sendCodeFlag"  ></i></button>
+						    </section>
+						    <section class="section3" >
+						    </section>
+					    </div>
+				    </article>
+				    
+				    <article> 
+					    <div class="info-group">
+						    <section class="section1">
+							    <label for="officePhone">座机：</label>
+						    </section>
+						    <section class="section2">
+					    	    <input class="form-control xuhao" placeholder="区号" name="zipCode"  id="zipCode" ng-model="profileEdit.zip_code"  maxlength="4" number-only-input required />
+					    	    <input class="form-control office-phone" placeholder="办公电话" name="officePhone"  id="officePhone" maxlength="8" ng-model="profileEdit.office_phone"  number-only-input required/>
+						    </section>
+						    <section class="section3" >
+						    </section>
+					    </div>
+				    </article>
+				    <article> 
+					    <div class="info-group">
+						    <section class="section1">
+					    	    <label for="address">联系地址：</label>
+						    </section>
+						    <section class="section2">
+					    	    <select class="form-control address"  name="province"  id="province" ng-model="addressEdit.province" ng-options="p.province_name for p in provinceItems" ng-change="provinceChange()" style="cursor:pointer">
+					    	    </select>
+					    	    <select class="form-control address"  name="city"  id="city" ng-model="addressEdit.
+		                        city" ng-options="c.city_name for c in cityItems" ng-change="cityChange()" style="cursor:pointer"></select>
+					    	    <select class="form-control address" name="county"  id="county" ng-model="addressEdit.county" ng-options="c.county_district_name for c in countyItems" style="cursor:pointer"></select>
+						    </section>
+						    <section class="section3" >
+						    </section>
+					    </div>
+				    </article>
+			    	    <article> 
+					    <div class="info-group">
+						    <section class="section1">
+						    </section>
+						    <section class="section2">
+					    	    <input class="form-control" placeholder="请输入详细地址" name="addressDetail"  id="addressDetail" ng-model="addressEdit.address_detail"  required/>
+						    </section>
+						    <section class="section3" >
+						    </section>
+					    </div>
+				    </article>
+	    		    <article> 
+					    <div class="info-group">
+						    <section class="section1">
+							    <label for="postal">邮编：</label>
+						    </section>
+						    <section class="section2">
+					    	    <input class="form-control" placeholder="请输入您的邮编" name="postal"  id="postal" ng-model="profileEdit.postal_code"  number-only-input maxlength="6" required/>
+						    </section>
+						    <section class="section3" >
+						    </section>
+					    </div>
+				    </article>
+				    <article style="margin-top:40px;"> 
+					    <p class="error-message" ng-bind="errorMsg"></p> 
+					    <div class="info-group">
+						    <section class="section1">
+						    </section>
+						    <section class="section2">
+							    <button type="button" ng-click="saveInfo()" class="double-part-btn">保存&nbsp;&nbsp;<i class="fa fa-gear fa-spin" ng-show="saveInfoFlag" ng-cloak></i></button>
+					    	    <button type="button" ng-click="changeEditStatus()" class="double-part-btn">取消</button>
+						    </section>
+						    <section class="section3" >
+						    </section>
+					    </div>
+				    </article>
+			    </form>
+		    </div>
+	    </div>
+	</div>
+</div>

@@ -1,0 +1,98 @@
+[2016-04-06 14:40:46.307] [INFO] console - website server start ====================
+[2016-04-06 14:40:47.002] [INFO] ./log/20160406 - The server is starting
+[2016-04-06 14:40:54.181] [INFO] ./log/20160406 - get home page
+[2016-04-06 14:41:00.176] [INFO] ./log/20160406 - get Gongjijin page
+[2016-04-06 14:41:11.597] [INFO] console - website server start ====================
+[2016-04-06 14:41:11.678] [INFO] ./log/20160406 - The server is starting
+[2016-04-06 14:41:12.595] [INFO] console - website server start ====================
+[2016-04-06 14:41:12.676] [INFO] ./log/20160406 - The server is starting
+[2016-04-06 14:41:15.656] [INFO] console - website server start ====================
+[2016-04-06 14:41:15.739] [INFO] ./log/20160406 - The server is starting
+[2016-04-06 14:41:16.691] [INFO] console - website server start ====================
+[2016-04-06 14:41:16.776] [INFO] ./log/20160406 - The server is starting
+[2016-04-06 14:41:18.151] [INFO] ./log/20160406 - get Gongjijin page
+[2016-04-06 14:43:13.308] [INFO] console - website server start ====================
+[2016-04-06 14:43:13.390] [INFO] ./log/20160406 - The server is starting
+[2016-04-06 14:43:14.277] [INFO] console - website server start ====================
+[2016-04-06 14:43:14.363] [INFO] ./log/20160406 - The server is starting
+[2016-04-06 14:43:16.921] [INFO] ./log/20160406 - get Gongjijin page
+[2016-04-06 14:43:26.455] [INFO] console - website server start ====================
+[2016-04-06 14:43:26.534] [INFO] ./log/20160406 - The server is starting
+[2016-04-06 14:43:27.554] [INFO] console - website server start ====================
+[2016-04-06 14:43:27.647] [INFO] ./log/20160406 - The server is starting
+[2016-04-06 14:43:28.734] [INFO] ./log/20160406 - get Gongjijin page
+[2016-04-06 14:43:37.612] [INFO] console - website server start ====================
+[2016-04-06 14:43:37.693] [INFO] ./log/20160406 - The server is starting
+[2016-04-06 14:43:39.266] [INFO] ./log/20160406 - get Gongjijin page
+[2016-04-06 14:43:56.512] [INFO] console - website server start ====================
+[2016-04-06 14:43:56.591] [INFO] ./log/20160406 - The server is starting
+[2016-04-06 14:43:57.156] [INFO] ./log/20160406 - get Gongjijin page
+[2016-04-06 14:44:10.057] [INFO] console - website server start ====================
+[2016-04-06 14:44:10.145] [INFO] ./log/20160406 - The server is starting
+[2016-04-06 14:44:42.725] [INFO] console - website server start ====================
+[2016-04-06 14:44:42.824] [INFO] ./log/20160406 - The server is starting
+[2016-04-06 14:44:43.723] [INFO] console - website server start ====================
+[2016-04-06 14:44:43.810] [INFO] ./log/20160406 - The server is starting
+[2016-04-06 14:44:44.662] [INFO] ./log/20160406 - get Gongjijin page
+[2016-04-06 14:44:48.815] [INFO] console - website server start ====================
+[2016-04-06 14:44:48.903] [INFO] ./log/20160406 - The server is starting
+[2016-04-06 14:44:49.747] [INFO] console - website server start ====================
+[2016-04-06 14:44:49.826] [INFO] ./log/20160406 - The server is starting
+[2016-04-06 14:57:25.060] [INFO] console - website server start ====================
+[2016-04-06 14:57:25.149] [INFO] ./log/20160406 - The server is starting
+[2016-04-06 14:57:26.073] [INFO] ./log/20160406 - get Gongjijin page
+[2016-04-06 14:57:26.506] [INFO] console - get gongjijin address { url: 'https://api.pierup.cn/pier-rule-web/gongjj/addr?platform=1',
+  method: 'GET',
+  json: true,
+  body: undefined,
+  headers: { 'Content-Type': 'application/json' } }
+[2016-04-06 14:57:27.089] [INFO] console - get gongjijin address response body { code: 200, message: 'OK', result: { items: [ [Object] ] } }
+[2016-04-06 14:57:33.189] [INFO] console - website server start ====================
+[2016-04-06 14:57:33.285] [INFO] ./log/20160406 - The server is starting
+[2016-04-06 14:57:34.185] [INFO] console - website server start ====================
+[2016-04-06 14:57:34.296] [INFO] ./log/20160406 - The server is starting
+[2016-04-06 14:57:41.792] [INFO] ./log/20160406 - get Gongjijin page
+[2016-04-06 14:59:05.494] [INFO] console - website server start ====================
+[2016-04-06 14:59:05.580] [INFO] ./log/20160406 - The server is starting
+[2016-04-06 14:59:06.514] [INFO] console - website server start ====================
+[2016-04-06 14:59:06.605] [INFO] ./log/20160406 - The server is starting
+[2016-04-06 14:59:07.019] [INFO] ./log/20160406 - get Gongjijin page
+[2016-04-06 14:59:07.314] [INFO] console - get gongjijin address { url: 'https://api.pierup.cn/pier-rule-web/gongjj/addr?platform=1',
+  method: 'GET',
+  json: true,
+  body: undefined,
+  headers: { 'Content-Type': 'application/json' } }
+[2016-04-06 14:59:07.583] [INFO] console - get gongjijin address response body { code: 200, message: 'OK', result: { items: [ [Object] ] } }
+[2016-04-06 14:59:24.714] [INFO] console - website server start ====================
+[2016-04-06 14:59:24.793] [INFO] ./log/20160406 - The server is starting
+[2016-04-06 14:59:26.775] [INFO] console - website server start ====================
+[2016-04-06 14:59:26.858] [INFO] ./log/20160406 - The server is starting
+[2016-04-06 14:59:32.812] [INFO] console - website server start ====================
+[2016-04-06 14:59:32.892] [INFO] ./log/20160406 - The server is starting
+[2016-04-06 14:59:33.816] [INFO] console - website server start ====================
+[2016-04-06 14:59:33.899] [INFO] ./log/20160406 - The server is starting
+[2016-04-06 14:59:39.893] [INFO] console - website server start ====================
+[2016-04-06 14:59:39.979] [INFO] ./log/20160406 - The server is starting
+[2016-04-06 14:59:41.914] [INFO] console - website server start ====================
+[2016-04-06 14:59:42.009] [INFO] ./log/20160406 - The server is starting
+[2016-04-06 14:59:44.411] [INFO] ./log/20160406 - get Gongjijin page
+[2016-04-06 14:59:44.645] [INFO] console - get gongjijin address { url: 'https://api.pierup.cn/pier-rule-web/gongjj/addr?platform=1',
+  method: 'GET',
+  json: true,
+  body: undefined,
+  headers: { 'Content-Type': 'application/json' } }
+[2016-04-06 14:59:44.858] [INFO] console - get gongjijin address response body { code: 200, message: 'OK', result: { items: [ [Object] ] } }
+[2016-04-06 15:01:42.679] [INFO] console - website server start ====================
+[2016-04-06 15:01:42.807] [INFO] ./log/20160406 - The server is starting
+[2016-04-06 15:01:44.094] [INFO] ./log/20160406 - get Gongjijin page
+[2016-04-06 15:01:44.349] [INFO] console - get gongjijin address { url: 'https://api.pierup.cn/pier-rule-web/gongjj/addr?platform=1',
+  method: 'GET',
+  json: true,
+  body: undefined,
+  headers: { 'Content-Type': 'application/json' } }
+[2016-04-06 15:01:45.694] [INFO] console - get gongjijin address response body { code: 200, message: 'OK', result: { items: [ [Object] ] } }
+[2016-04-06 16:34:32.363] [INFO] console - website server start ====================
+[2016-04-06 16:34:32.884] [INFO] ./log/20160406 - The server is starting
+[2016-04-06 16:35:28.273] [INFO] console - website server start ====================
+[2016-04-06 16:35:28.338] [INFO] ./log/20160406 - The server is starting
+[2016-04-06 16:35:28.466] [INFO] ./log/20160406 - get home page

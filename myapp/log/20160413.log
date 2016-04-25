@@ -1,0 +1,222 @@
+[2016-04-13 18:01:00.583] [INFO] console - website server start ====================
+[2016-04-13 18:01:01.736] [INFO] ./log/20160413 - The server is starting
+[2016-04-13 18:01:57.459] [INFO] ./log/20160413 - get home page
+[2016-04-13 18:01:59.599] [INFO] ./log/20160413 - get corporation page
+[2016-04-13 18:02:25.372] [INFO] console - website server start ====================
+[2016-04-13 18:02:25.458] [INFO] ./log/20160413 - The server is starting
+[2016-04-13 18:02:26.365] [INFO] console - website server start ====================
+[2016-04-13 18:02:26.444] [INFO] ./log/20160413 - The server is starting
+[2016-04-13 18:02:27.361] [INFO] console - website server start ====================
+[2016-04-13 18:02:27.442] [INFO] ./log/20160413 - The server is starting
+[2016-04-13 18:02:49.447] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/manage/signin?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: 'd6d926fb-015e-11e6-8a67-6c92bf21d955',
+     merchant_id: 'MC0000006975',
+     status_bit: '15' } }
+[2016-04-13 18:02:49.466] [INFO] console - ression Session {
+  cookie: 
+   { path: '/',
+     _expires: Wed Apr 13 2016 19:02:49 GMT+0800 (中国标准时间),
+     originalMaxAge: 3600000,
+     httpOnly: true,
+     secure: false },
+  pier_merchant: 
+   { status_bit: '15',
+     merchant_id: 'MC0000006975',
+     session_token: 'd6d926fb-015e-11e6-8a67-6c92bf21d955',
+     email: 'pierup@163.com' } }
+[2016-04-13 18:02:49.469] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'd6d926fb-015e-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-13 18:02:49.776] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'd6d926fb-015e-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-13 18:02:49.987] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'd6d926fb-015e-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-13 18:02:50.058] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/dashboard/get_merchant_dashboard?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { total_success_transactions: '114',
+     gross_revenue: '-66753.00',
+     total_customers: '93',
+     items: 
+      [ [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object] ] } }
+[2016-04-13 18:03:06.378] [INFO] console - website server start ====================
+[2016-04-13 18:03:06.456] [INFO] ./log/20160413 - The server is starting
+[2016-04-13 18:03:14.397] [INFO] console - website server start ====================
+[2016-04-13 18:03:14.482] [INFO] ./log/20160413 - The server is starting
+[2016-04-13 18:03:14.739] [INFO] console - ression Session {
+  cookie: 
+   { path: '/',
+     _expires: Wed Apr 13 2016 19:03:14 GMT+0800 (中国标准时间),
+     originalMaxAge: 3600000,
+     httpOnly: true,
+     secure: false } }
+[2016-04-13 18:03:14.753] [INFO] console - checkout Auth for merchant {}
+[2016-04-13 18:03:15.007] [ERROR] ./log/20160413 - The url path "/merchants/192.168.1.145/api-validatecode/getImage" Not Found
+[2016-04-13 18:03:15.009] [ERROR] ./log/20160413 - Failed to lookup view "error" in views directory "E:\pier\chinese_web\pier_web_cn\myapp\pier_merchant"
+[2016-04-13 18:03:15.021] [ERROR] console - Error: Failed to lookup view "error" in views directory "E:\pier\chinese_web\pier_web_cn\myapp\pier_merchant"
+    at EventEmitter.app.render (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\application.js:555:17)
+    at ServerResponse.res.render (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\response.js:938:7)
+    at E:\pier\chinese_web\pier_web_cn\myapp\server.js:106:7
+    at Layer.handle_error (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\router\layer.js:58:5)
+    at trim_prefix (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\router\index.js:300:13)
+    at E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\router\index.js:270:7
+    at Function.proto.process_params (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\router\index.js:321:12)
+    at IncomingMessage.next (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\router\index.js:261:10)
+    at fn (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\response.js:933:25)
+    at EventEmitter.app.render (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\application.js:557:14)
+[2016-04-13 18:03:16.593] [ERROR] ./log/20160413 - The url path "/merchants/192.168.1.145/api-validatecode/getImage" Not Found
+[2016-04-13 18:03:16.595] [ERROR] ./log/20160413 - Failed to lookup view "error" in views directory "E:\pier\chinese_web\pier_web_cn\myapp\pier_merchant"
+[2016-04-13 18:03:16.598] [ERROR] console - Error: Failed to lookup view "error" in views directory "E:\pier\chinese_web\pier_web_cn\myapp\pier_merchant"
+    at EventEmitter.app.render (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\application.js:555:17)
+    at ServerResponse.res.render (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\response.js:938:7)
+    at E:\pier\chinese_web\pier_web_cn\myapp\server.js:106:7
+    at Layer.handle_error (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\router\layer.js:58:5)
+    at trim_prefix (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\router\index.js:300:13)
+    at E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\router\index.js:270:7
+    at Function.proto.process_params (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\router\index.js:321:12)
+    at IncomingMessage.next (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\router\index.js:261:10)
+    at fn (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\response.js:933:25)
+    at EventEmitter.app.render (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\application.js:557:14)
+[2016-04-13 18:03:17.025] [ERROR] ./log/20160413 - The url path "/merchants/192.168.1.145/api-validatecode/getImage" Not Found
+[2016-04-13 18:03:17.027] [ERROR] ./log/20160413 - Failed to lookup view "error" in views directory "E:\pier\chinese_web\pier_web_cn\myapp\pier_merchant"
+[2016-04-13 18:03:17.029] [ERROR] console - Error: Failed to lookup view "error" in views directory "E:\pier\chinese_web\pier_web_cn\myapp\pier_merchant"
+    at EventEmitter.app.render (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\application.js:555:17)
+    at ServerResponse.res.render (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\response.js:938:7)
+    at E:\pier\chinese_web\pier_web_cn\myapp\server.js:106:7
+    at Layer.handle_error (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\router\layer.js:58:5)
+    at trim_prefix (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\router\index.js:300:13)
+    at E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\router\index.js:270:7
+    at Function.proto.process_params (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\router\index.js:321:12)
+    at IncomingMessage.next (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\router\index.js:261:10)
+    at fn (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\response.js:933:25)
+    at EventEmitter.app.render (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\application.js:557:14)
+[2016-04-13 18:03:17.298] [ERROR] ./log/20160413 - The url path "/merchants/192.168.1.145/api-validatecode/getImage" Not Found
+[2016-04-13 18:03:17.302] [ERROR] ./log/20160413 - Failed to lookup view "error" in views directory "E:\pier\chinese_web\pier_web_cn\myapp\pier_merchant"
+[2016-04-13 18:03:17.307] [ERROR] console - Error: Failed to lookup view "error" in views directory "E:\pier\chinese_web\pier_web_cn\myapp\pier_merchant"
+    at EventEmitter.app.render (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\application.js:555:17)
+    at ServerResponse.res.render (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\response.js:938:7)
+    at E:\pier\chinese_web\pier_web_cn\myapp\server.js:106:7
+    at Layer.handle_error (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\router\layer.js:58:5)
+    at trim_prefix (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\router\index.js:300:13)
+    at E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\router\index.js:270:7
+    at Function.proto.process_params (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\router\index.js:321:12)
+    at IncomingMessage.next (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\router\index.js:261:10)
+    at fn (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\response.js:933:25)
+    at EventEmitter.app.render (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\application.js:557:14)
+[2016-04-13 18:03:17.501] [ERROR] ./log/20160413 - The url path "/merchants/192.168.1.145/api-validatecode/getImage" Not Found
+[2016-04-13 18:03:17.503] [ERROR] ./log/20160413 - Failed to lookup view "error" in views directory "E:\pier\chinese_web\pier_web_cn\myapp\pier_merchant"
+[2016-04-13 18:03:17.506] [ERROR] console - Error: Failed to lookup view "error" in views directory "E:\pier\chinese_web\pier_web_cn\myapp\pier_merchant"
+    at EventEmitter.app.render (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\application.js:555:17)
+    at ServerResponse.res.render (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\response.js:938:7)
+    at E:\pier\chinese_web\pier_web_cn\myapp\server.js:106:7
+    at Layer.handle_error (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\router\layer.js:58:5)
+    at trim_prefix (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\router\index.js:300:13)
+    at E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\router\index.js:270:7
+    at Function.proto.process_params (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\router\index.js:321:12)
+    at IncomingMessage.next (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\router\index.js:261:10)
+    at fn (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\response.js:933:25)
+    at EventEmitter.app.render (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\application.js:557:14)
+[2016-04-13 18:03:17.837] [ERROR] ./log/20160413 - The url path "/merchants/192.168.1.145/api-validatecode/getImage" Not Found
+[2016-04-13 18:03:17.839] [ERROR] ./log/20160413 - Failed to lookup view "error" in views directory "E:\pier\chinese_web\pier_web_cn\myapp\pier_merchant"
+[2016-04-13 18:03:17.852] [ERROR] console - Error: Failed to lookup view "error" in views directory "E:\pier\chinese_web\pier_web_cn\myapp\pier_merchant"
+    at EventEmitter.app.render (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\application.js:555:17)
+    at ServerResponse.res.render (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\response.js:938:7)
+    at E:\pier\chinese_web\pier_web_cn\myapp\server.js:106:7
+    at Layer.handle_error (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\router\layer.js:58:5)
+    at trim_prefix (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\router\index.js:300:13)
+    at E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\router\index.js:270:7
+    at Function.proto.process_params (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\router\index.js:321:12)
+    at IncomingMessage.next (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\router\index.js:261:10)
+    at fn (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\response.js:933:25)
+    at EventEmitter.app.render (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\application.js:557:14)
+[2016-04-13 18:03:17.974] [ERROR] ./log/20160413 - The url path "/merchants/192.168.1.145/api-validatecode/getImage" Not Found
+[2016-04-13 18:03:17.978] [ERROR] ./log/20160413 - Failed to lookup view "error" in views directory "E:\pier\chinese_web\pier_web_cn\myapp\pier_merchant"
+[2016-04-13 18:03:17.980] [ERROR] console - Error: Failed to lookup view "error" in views directory "E:\pier\chinese_web\pier_web_cn\myapp\pier_merchant"
+    at EventEmitter.app.render (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\application.js:555:17)
+    at ServerResponse.res.render (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\response.js:938:7)
+    at E:\pier\chinese_web\pier_web_cn\myapp\server.js:106:7
+    at Layer.handle_error (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\router\layer.js:58:5)
+    at trim_prefix (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\router\index.js:300:13)
+    at E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\router\index.js:270:7
+    at Function.proto.process_params (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\router\index.js:321:12)
+    at IncomingMessage.next (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\router\index.js:261:10)
+    at fn (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\response.js:933:25)
+    at EventEmitter.app.render (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\application.js:557:14)
+[2016-04-13 18:03:18.208] [ERROR] ./log/20160413 - The url path "/merchants/192.168.1.145/api-validatecode/getImage" Not Found
+[2016-04-13 18:03:18.210] [ERROR] ./log/20160413 - Failed to lookup view "error" in views directory "E:\pier\chinese_web\pier_web_cn\myapp\pier_merchant"
+[2016-04-13 18:03:18.217] [ERROR] console - Error: Failed to lookup view "error" in views directory "E:\pier\chinese_web\pier_web_cn\myapp\pier_merchant"
+    at EventEmitter.app.render (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\application.js:555:17)
+    at ServerResponse.res.render (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\response.js:938:7)
+    at E:\pier\chinese_web\pier_web_cn\myapp\server.js:106:7
+    at Layer.handle_error (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\router\layer.js:58:5)
+    at trim_prefix (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\router\index.js:300:13)
+    at E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\router\index.js:270:7
+    at Function.proto.process_params (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\router\index.js:321:12)
+    at IncomingMessage.next (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\router\index.js:261:10)
+    at fn (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\response.js:933:25)
+    at EventEmitter.app.render (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\application.js:557:14)
+[2016-04-13 18:03:18.352] [ERROR] ./log/20160413 - The url path "/merchants/192.168.1.145/api-validatecode/getImage" Not Found
+[2016-04-13 18:03:18.353] [ERROR] ./log/20160413 - Failed to lookup view "error" in views directory "E:\pier\chinese_web\pier_web_cn\myapp\pier_merchant"
+[2016-04-13 18:03:18.356] [ERROR] console - Error: Failed to lookup view "error" in views directory "E:\pier\chinese_web\pier_web_cn\myapp\pier_merchant"
+    at EventEmitter.app.render (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\application.js:555:17)
+    at ServerResponse.res.render (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\response.js:938:7)
+    at E:\pier\chinese_web\pier_web_cn\myapp\server.js:106:7
+    at Layer.handle_error (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\router\layer.js:58:5)
+    at trim_prefix (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\router\index.js:300:13)
+    at E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\router\index.js:270:7
+    at Function.proto.process_params (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\router\index.js:321:12)
+    at IncomingMessage.next (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\router\index.js:261:10)
+    at fn (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\response.js:933:25)
+    at EventEmitter.app.render (E:\pier\chinese_web\pier_web_cn\myapp\node_modules\express\lib\application.js:557:14)
+[2016-04-13 18:03:28.407] [INFO] console - website server start ====================
+[2016-04-13 18:03:28.475] [INFO] ./log/20160413 - The server is starting
+[2016-04-13 18:03:29.354] [INFO] console - website server start ====================
+[2016-04-13 18:03:29.435] [INFO] ./log/20160413 - The server is starting
+[2016-04-13 18:03:39.354] [INFO] console - website server start ====================
+[2016-04-13 18:03:39.431] [INFO] ./log/20160413 - The server is starting
+[2016-04-13 18:03:40.354] [INFO] console - website server start ====================
+[2016-04-13 18:03:40.420] [INFO] ./log/20160413 - The server is starting
+[2016-04-13 18:06:17.397] [INFO] console - website server start ====================
+[2016-04-13 18:06:17.471] [INFO] ./log/20160413 - The server is starting
+[2016-04-13 18:06:18.374] [INFO] console - website server start ====================
+[2016-04-13 18:06:18.446] [INFO] ./log/20160413 - The server is starting
+[2016-04-13 18:06:19.360] [INFO] console - website server start ====================
+[2016-04-13 18:06:19.419] [INFO] ./log/20160413 - The server is starting

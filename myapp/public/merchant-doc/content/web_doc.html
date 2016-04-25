@@ -1,0 +1,206 @@
+<div class="container-fluid">
+    <div class="row">
+	    <div class="col-md-12">
+			<p class="doc-title1">web 文档和demo</p>
+			<hr class="doc-hr">
+		</div>
+		<div class="col-md-12">
+			<p>web 引入品而支付按钮</p>
+			<ul class="disc-list">
+				<li>品而logo图标引入地址：<a href="http://pierup.cn/%2fimages%2fpierlogo38.png" target="_blank">http://pierup.cn/images/pierlogo38.png</a>
+				</li>
+			</ul>
+			<div class="doc-demo-btn">
+				<div id="pierPay" >
+					<img src="http://pierup.cn/images/pierlogo38.png" />
+					<span>品而支付</span>
+				</div>
+			</div>
+			<p>支付页面嵌入sdk</p>
+<pre class="doc-script">
+&lt;script src='https://pierup.cn/lib//pier_sdk_v1.min.js' class="pier-button" &gt;&lt;/script&gt;
+&lt;script &gt;
+	PIER.checkout({
+	    money_order: '0.01',
+	    no_order: '******0001',
+	    merchant_id: '******1409',
+	    merchant_logo: 'http://pierup.cn/images/pierlogo38.png',
+	    api_id: '#######-####-####-####-############',
+	    sign: '#######-####-####-####-############',
+	    sign_type: 'RSA',
+	    valid_order: '10080',
+	    charset: 'UTF-8',
+	    name_goods: '测试商品',
+	    info_order: '两只毛笔和一只铅笔'
+	    dt_order: '20160311164511'
+	    <span class="gray">//pier_btn_id: 'payBtn'</span>
+	}, function( result ){
+          if( result === 'success' ){
+            <span class="gray">//payment success handler</span>
+          } 
+          if( result === 'failed' ){
+            <span class="gray">//payment failed  handler</span>
+          }
+          if( result === 'uncompleted' ){
+            <span class="gray">//payment uncomplete handler</span>
+          }
+        });
+&lt;/script&gt;
+</pre>
+		</div>
+		<div class="col-md-12">
+			<p class="caption">注意：</p>
+			<ul class="disc-list">
+				<li>在商户引入品而的js库的时候，里面提供一个全局对象<span class="purple">PIER</span>, 通过使用PIER的方法<span class="purple">checkout()”</span>来绑定支付事件。</li>
+				<li>在方法<span class="purple">PIER.checkout( opts, callback)</span>中有两个参数，第一个是初始化所有该SDK所需要的参数（如上图），第二个是该支付方法的一个回调方法，在用户进行支付的过程中，商户可以在这里执行一些操作。</li>
+				<li>如果初始化参数没有按照要求一一填写，则不会成功绑定支付事件，控制台将打印出错误信息。</li>
+				<li>参数中的签名sign，必须是由url encode过的sign。</li>
+			</ul>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12 ">
+			<table class="doc-param-table">
+				<caption>初始化参数说明</caption>
+				<thead>
+					<td>参数名称</td>
+					<td>描述</td>
+					<td>是否必须</td>
+				</thead>
+				<tr>
+					<td>money_order</td>
+					<td>用户需要支付的金额，金额必须是保留小数点后2位。（如：10.00）</td>
+					<td>是</td>
+				</tr>
+				<tr>
+					<td>no_order</td>
+					<td>商户端唯一订单号</td>
+					<td>是</td>
+				</tr>
+				<tr>
+					<td>merchant_id</td>
+					<td>商户编号是商户在连连支付的唯一标识</td>
+					<td>是</td>
+				</tr>
+				<tr>
+					<td>merchant_logo</td>
+					<td>商户的品牌logo</td>
+					<td>是</td>
+				</tr>
+				<tr>
+					<td>api_id</td>
+					<td>商户在注册品而用户时，能够得到的api_id</td>
+					<td>是</td>
+				</tr>
+				<tr>
+					<td>sign</td>
+					<td>加密签名串：除sign外的所有参数加密后生成的加密串&key，不包含空参数，见安全签名机制（由url编码过）</td>
+					<td>是</td>
+				</tr>
+				<tr>
+					<td>sign_type</td>
+					<td>RSA或者MD5</td>
+					<td>是</td>
+				</tr>
+				<tr>
+					<td>valid_order</td>
+					<td>该笔订单支付的有效时间（单位分）</td>
+					<td>是</td>
+				</tr>
+				<tr>
+					<td>name_goods</td>
+					<td>交易商品的名称</td>
+					<td>是</td>
+				</tr>
+				<tr>
+					<td>dt_order</td>
+					<td>该笔订单的创建时间（例如：'20160311164511'）</td>
+					<td>否</td>
+				</tr>
+				<tr>
+					<td>info_order</td>
+					<td>该笔订单的商品信息</td>
+					<td>否</td>
+				</tr>
+				<tr>
+					<td>charset</td>
+					<td>UTF-8</td>
+					<td>是</td>
+				</tr>
+				<tr>
+					<td>pier_btn_id</td>
+					<td>支付按钮的ID(如果不填，会自动生成一个默认的支付按钮)</td>
+					<td>否</td>
+				</tr>
+			</table>
+		</div>
+		<div class="col-md-12">
+			<p class="caption">回调说明（function中的result表示支付回调的结果）</p>
+			<div class="col-md-12">
+				<ul class="disc-list">
+					<li><span class="purple">result === 'success'</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;说明该笔支付已经成功，直接处理成功的事件</li>
+					<li><span class="purple">result === 'failed'</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;说明该笔支付失败，直接处理失败的事件</li>
+					<li><span class="purple">result === 'uncompleted'</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;说明该笔支付未完成，用户中途退出，直接处理未完成的事件</li>
+				</ul>
+			</div>
+<pre class="doc-script">
+&lt;script &gt;
+	PIER.checkout(opts, callback);
+	callback = function( result ){
+	      if( result === 'success' ){
+	        <span class="gray">//payment success handler</span>
+	      } 
+	      if( result === 'failed' ){
+	        <span class="gray">//payment failed  handler</span>
+	      }
+	      if( result === 'uncompleted' ){
+	        <span class="gray">//payment uncomplete handler</span>
+	      }
+	    }
+&lt;/script&gt;
+</pre>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<br><br>
+		</div>
+		<div class="col-md-8">
+			<div class="doc-title2"><a id="doc-interface">Demo演示</a></div>
+		</div>
+		<div class="col-md-4">
+		</div>
+		<div class="col-md-12">
+			<form>
+		         <script src="https://pierup.cn/lib//pier_sdk_v1.min.js" class='pier-button' ></script>
+		    </form>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<br><br>
+		</div>
+		<div class="col-md-8">
+			<div class="doc-title2"><a id="doc-interface">web 接入文档(点击查看)</a></div>
+		</div>
+		<div class="col-md-4">
+			<button type="button" class="close" ><img src="../images/db-close.png" width="20"  style="cursor:pointer;"></button>
+		</div>
+		<div class="col-md-12 text-center">
+			<!-- <iframe src="../merchant-doc/web-doc.pdf" width="800" height="700"></iframe>  -->
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-12">
+			<hr class="doc-hr">
+			<p class="doc-title2">跟新日志</p>
+			<table class="doc-log">
+				<tr ng-repeat=" data in webUpdateLogs">
+					<td>{{data.date}}</td>
+					<td>{{data.description}}</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>

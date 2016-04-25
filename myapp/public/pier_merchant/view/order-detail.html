@@ -1,0 +1,118 @@
+
+	<div class="modal-header text-center">
+	    <div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-8 col-xs-offset-2">
+					<h4>订单详情({{orderObj.order_id}})</h4>
+				</div>
+				<div class="col-xs-2">
+					<i class="fa fa-remove pull-right" ng-click="dismiss()" style="cursor:pointer;"></i>
+				</div>
+			</div>  	
+	    </div>
+	</div> <!-- close .modal-header -->
+<div ng-controller="OrderDetail2Controller">
+	<div class="modal-body" style="padding-left:50px;padding-right:50px;" >
+		<div class="container-fluid text-center">
+			<div class="row">
+				<div class="col-md-12 ">
+					<section class="panel panel-default text-left">
+						<div class="panel-body">
+							<h4 class="text-center">订单基本信息</h4>
+						    <table style="width:100%;" >
+						    	<tr>
+						    		<td class="text-right" style="width:20%;">订单创建时间：&nbsp;&nbsp;</td>
+						    		<td class="text-left" style="width:30%;" ng-bind="createdOn|dateTransfer"></td>
+						    		<td class="text-right" style="width:20%;">订单状态：&nbsp;&nbsp;</td>
+						    	    <td class="text-left" style="width:30%;" ng-bind="orderStatus"></td>
+						    	</tr>
+						    	<tr >
+						    		<td class="text-right">总金额：&nbsp;&nbsp;</td>
+						    		<td class="text-left" ng-bind="grandTotal|currency:'￥'"></td>
+						    		<td class="text-right">商品金额：&nbsp;&nbsp;</td>
+						    	    <td class="text-left" ng-bind="subTotal|currency:'￥'"></td>
+						    	</tr>
+						    	<tr>
+						    		<td class="text-right">是否银行卡支付：</td>
+						    		<td ng-bind='payType'></td>
+						    		<td class="text-right">物流费用和关税：&nbsp;&nbsp;</td>
+						    	    <td class="text-left" ng-bind="fee|currency:'￥'"></td>
+						    	</tr>
+						    </table>
+						    <button class="normal-btn pull-right" ng-show="orderCanBeCancel" ng-click="cancelOrder()">是否取消订单</button>
+					    </div>
+				    </section>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<section class="panel panel-default text-left">
+						<div class="panel-body">
+							<h4 class="text-center">收货信息(用户注册手机：{{userPhone}})</h4>
+							<p style="font-size:16px;"><span ng-bind="address.name"></span><span ng-bind="address.phone" style="margin-left:40px;"></span></p>
+							<p style="font-size:16px;"><span ng-bind="address.detail"></span></p>
+						</div>
+					</section>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<section class="panel panel-default text-left">
+						<div class="panel-body">
+							<h4 class="text-center">商品详情</h4>
+							<table>
+								<tr ng-repeat="product in productList" style="border-bottom:1px dotted #ccc;">
+									<td style="width:10%;"><img ng-src={{product.logo}} class="img-responsive" /> </td>
+									<td style="width:50%;">
+									     <p style="line-height:10px;" ng-bind="product.product"></p>
+									     <p style="line-height:10px;" ng-bind="product.detail"></p>
+									     <p style="line-height:10px;">X  <span ng-bind="product.count"></span></p>
+									     <p style="line-height:10px;">单价：<span ng-bind="product.price|currency:'￥'"></span></p>
+									</td>
+									<td style="width:20%;"><p>总价：<span ng-bind="product.total|currency:'￥'" style="color:red;font-size:20px;"></span></p></td>
+								</tr>
+							</table>
+						</div>
+					</section>
+				</div>
+			</div>
+			<div class="row" ng-hide="termId == ''">
+				<div class="col-md-12">
+					<section class="panel panel-default text-left">
+						<div class="panel-body">
+							<h4 class="text-center">分期信息</h4>
+							<p style="font-size:18px;">{{termCount}} 期 X {{monthPay|currency:'￥'}} （每月手续费：{{monthCharge|currency:'￥'}}） </p>
+						</div>
+					</section>
+				</div>
+			</div>
+			<div class="row" ng-hide="logisticId == ''">
+				<div class="col-md-12">
+					<section class="panel panel-default text-left">
+						<div class="panel-body">
+							<div class="col-md-12">
+								<h4>物流信息</h4>
+								<table class="order-tracking-table">
+			                      <tr ng-repeat="track in trackingList">
+			                        <td>
+			                          <div class="stick">
+			                            <div class="disc"></div>
+			                          </div>
+			                        </td>
+			                        <td>
+			                         
+			                        </td>
+			                        <td class="text-left">
+			                           <h4 ng-bind="track.context" ></h4>
+			                           <p ng-bind="track.time" ></p>
+			                        </td>
+			                      </tr>
+			                    </table>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+	    </div>
+	</div>
+</div>

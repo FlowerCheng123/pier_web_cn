@@ -1,0 +1,86 @@
+<%include ../header%>
+<div class="container" ng-app="RegisterApp" ng-controller="RegisterController">
+    <div class="auth-fence">
+		<div class="title">
+			<p>企业版注册</p>
+    	</div>
+    	<div class="auth-form">
+			<div class="register-process">
+				<div style="width:100%;height:2px;background:#fff;"></div>
+			    <div style="width:100%;height:1px;background:rgb(200,200,200);"></div>
+			    <div class="process1 process active">
+			        <div class="circle ">1</div> 
+			        <p>基本信息</p>
+			    </div>
+			    <div class="process2 process" >
+			        <div class="circle">2</div> 
+			        <p>邮箱激活</p>
+			    </div>
+			</div>
+	    	<form class="register-form" id="registerForm">
+	    	    <article> 
+				    <p class="auth-error" ng-show="emailNotRight" ng-cloak>{{emailErrorMsg}}</p>
+				    <div class="auth-group">
+					    <section class="section1">
+				    	    <label for="email">邮箱：</label>
+					    </section>
+					    <section class="section2">
+				    	    <input class="form-control" placeholder="请输入您的邮箱" name="email"  id="email" ng-model="email"  required ng-blur="validateEmail()"/>
+					    </section>
+					    <section class="section3" >
+					    </section>
+				    </div>
+			    </article>
+			    <article>
+			        <p class="auth-error" ng-show="passwordNotRight" ng-cloak>密码必须包含字母和数字，并且不少于6位</p> 
+				    <div class="auth-group">
+					    <section class="section1">
+				    	    <label for="password">设置密码：</label>
+					    </section>
+					    <section class="section2" >
+				    	    <input class="form-control" type="password" placeholder="请设置您的登入密码" name="password" id="password" ng-model="password"  maxlength="32" ng-blur="validPassword();passwordTip=false" ng-focus="passwordTip=true" required/>
+					    </section>
+					    <section class="section3">
+				    	    <p ng-show='passwordTip' ng-cloak>密码至少大于6位，包含字母和数字</p>
+					    </section>
+				    </div>
+			    </article>
+
+			    <article>
+			        <p class="auth-error" ng-show="passwordNotMatch" ng-cloak>密码不匹配</p> 
+				    <div class="auth-group">
+					    <section class="section1">
+				    	    <label for="passwordConfirm">确认密码：</label>
+					    </section>
+					    <section class="section2" >
+				    	    <input class="form-control" type="password" placeholder="请再次输入您的密码" name="passwordConfirm" id="passwordConfirm" ng-model="passwordConfirm"  maxlength="32" ng-blur="validateMatch()" required/>
+					    </section>
+					    <section class="section3">
+				    	    <p ></p>
+					    </section>
+				    </div>
+			    </article>
+		        <article>
+	        	    <p style="margin-left:296px;"> 
+					    <input type="checkbox" name="serviceRule" ng-model="serviceRule"/>
+					    <span for="serviceRule">同意</span>
+					    <a style="color:#7b37a6">《品而服务条款》</a>
+				    </p>
+				    <p class="auth-error" ng-show="signUpError"><span ng-bind="signUpErrorMsg"></span></p>
+				    <div class="auth-group">
+					    <section class="section1">
+					    </section>
+					    <section class="section2" >
+				    	    <button type="submit" ng-click="signUp()">注册&nbsp;&nbsp;<i class="fa fa-gear fa-spin" ng-show="signUpFlag"  ></i></button>
+					    </section>
+					    <section class="section3">
+				    	    <p></p>
+					    </section>
+				    </div>
+			    </article>
+	    	</form>
+    	</div>
+    </div>
+</div>
+<script src="../pier_merchant/js/register.js"></script>
+<%include ../footer-2%>

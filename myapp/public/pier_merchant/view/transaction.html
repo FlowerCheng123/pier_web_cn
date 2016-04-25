@@ -1,0 +1,74 @@
+<div class="customer-container">
+	<div class="container-fluid">
+		<div class="row row1">
+			<div class="col-md-4 col-md-offset-1">
+				<label for="customerStartDate">开始日期</label>
+                <p class="input-group">
+		            <input id="customerStartDate" name="customerStartDate" type="text" class="form-control" datepicker-popup="{{calender.dateFormat}}" ng-model="startDate" datepicker-options="calender.dateOptions" close-text="Close" is-open="calender.opened.startDate" placeholder="{{calender.dateFormat}}" ng-click="calender.open($event, 'startDate')" max-date="maxDate" required> 
+		            <span class="input-group-btn">
+		                <button type="button" class="btn btn-default" ng-click="calender.open($event, 'startDate')"><i class="glyphicon glyphicon-calendar"></i></button>
+		            </span>
+                </p>
+			</div>
+			<div class="col-md-4">
+	            <label for="customerEndDate">结束日期</label>
+	            <p class="input-group">
+		            <input type="text" id="customerEndDate" name="customerEndDate" class="form-control mer-input" datepicker-popup="{{calender.dateFormat}}" ng-model="endDate" datepicker-options="calender.dateOptions" close-text="Close" is-open="calender.opened.endDate" placeholder="{{calender.dateFormat}}" ng-click="calender.open($event, 'endDate')" max-date="maxDate" required> 
+		            <span class="input-group-btn">
+		                <button type="button" class="btn btn-default pull-right" ng-click="calender.open($event, 'endDate')"><i class="glyphicon glyphicon-calendar"></i></button>
+		            </span>
+	            </p>
+			</div>
+			<div class="col-md-3">
+				<button type="button" class="form-control date-search-btn" ng-click="getTransactions()"><i class="fa fa-search"></i>&nbsp;Search</button>
+			</div>
+		</div>
+		<div ng-show="loadingData">
+			<div class="row" style="height:400px;padding-top:80px;">
+				<div class="col-md-6 col-md-offset-3 text-center">
+					<img src="../images/loading1.gif" /><span>努力加载中……</span>
+				</div>
+			</div>
+		</div>
+		<div ng-hide="loadingData">
+			<div class="row row2" style="padding-top:60px;">
+				<table class="transaction-table">
+					<thead>
+						<tr>
+					        <th>交易日期</th>
+					        <th>商户订单号</th>
+					        <th>交易金额</th>
+					        <th>手续费</th>
+					        <th>交易流水号</th>
+					        <!-- <th>备注</th> -->
+					        <th>退款</th>
+					    </tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="transaction in transactions" style="cursor: pointer;">
+							<td>{{transaction.created_on|dateTransfer}}</td>
+							<td ng-bind="transaction.id_in_merchant"></td>
+							<td ng-bind="transaction.amount | currency : '￥'"></td>
+							<td ng-bind="transaction.fee | currency : '￥'"></td>
+							<td ng-bind="transaction.transaction_id"></td>
+							<!-- <td ng-bind="transaction.notes"></td> -->
+							<td><button ng-click="makeRefund( transaction )" class="refund-btn2">退款</button></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="row row2 pagnation" ng-cloak>
+				<div class="col-md-6">
+		            <span class="total">共 {{numRecords}} 条记录 &nbsp;&nbsp;每页显示 &nbsp;</span> 
+		            <select  class="pageSize" class="form-control" ng-model="pageSize" ng-options="p.size for p in pageSizeOptions"></select>
+		            <span class="total">条记录</span> 
+	            </div>
+	            <div class="col-md-3 col-md-offset-3">
+		            <div class="pull-left arrow" ng-click="previousPage()" style="margin-right:8px;margin-left:30px;"><i class="fa fa-chevron-left"></i></div>
+		            <div class="pull-left"><input type="text" number-only-input  class="page" ng-model="currentPage"/>/<span style="font-size:20px;color:#787878;">{{numPages}}</span></div>
+		            <div class="pull-left arrow" ng-click="nextPage()" style="margin-left:8px;"><i class="fa fa-chevron-right" ></i></div>
+	            </div>
+			</div>
+		</div>
+	</div>
+</div>

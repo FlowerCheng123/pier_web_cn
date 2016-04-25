@@ -1,0 +1,61 @@
+<div class="container-fluid">
+    <div class="row">
+	    <div class="col-md-12">
+			<p class="doc-title1">iOS 文档和demo</p>
+			<hr class="doc-hr">
+		</div>
+		<div class="col-md-8">
+			<div class="doc-title2"><a id="doc-interface">(一). iOS 文档介绍和下载(点击查看)</a></div>
+		</div>
+		<div class="col-md-4">
+			<button type="button" class="close" ><img src="../images/db-close.png" width="20"  style="cursor:pointer;"></button>
+		</div>
+		<div class="col-md-12 text-center">
+			<iframe src="../merchant-doc/ios-doc.pdf" width="800" height="700"></iframe> 
+			<hr class="doc-hr">
+		</div>
+		<div class="col-md-12 doc-ios-checkout-flow">
+			<p class="doc-title2">(二). iOS 支付流程介绍</p>
+			<ul style="list-style-type: decimal;padding-left:40px;">
+				<li><p>选择购买商品，进入订单立即支付。</p>
+				<img src="../merchant-doc/doc-image/ios-doc1.png" /></li>
+				<li><p>进入SDK，到支付页面输入品而的用户名和密码进行登录支付。</p>
+				<img src="../merchant-doc/doc-image/ios-doc2.png" /></li>
+				<li><p>登录后，进入订单确认页面，将会显示用户购买订单信息以便让用户确认购买，如果订单错误，用户可以回到商户页面重新下单。</p>
+				<img src="../merchant-doc/doc-image/ios-doc3.png" /></li>
+				<li><p>订单确认后，用户需要输入支付密码，进行支付。</p>
+				<img src="../merchant-doc/doc-image/ios-doc4.png" /></li>
+				<li><p>支付成功。</p>
+				<img src="../merchant-doc/doc-image/ios-doc5.png" /></li>
+				<li><p>返回商户。</p>
+				<img src="../merchant-doc/doc-image/ios-doc6.png" /></li>
+			</ul>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<hr class="doc-hr">
+			<p class="doc-title2">跟新日志</p>
+			<table class="doc-log">
+				<tr ng-repeat=" data in iOSUpdateLogs">
+					<td>{{data.date}}</td>
+					<td>{{data.description}}</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	$(function(){
+		var timeDelay = 1000;
+       $('#doc-interface').click(function(){
+       	 $('iframe').slideToggle(timeDelay);
+       	 $('.close').slideToggle(timeDelay);
+       })
+       $('.close').click(function(){
+       	 $('iframe').slideToggle(timeDelay);
+       	 $('.close').slideToggle(timeDelay);
+       })
+	})
+</script>

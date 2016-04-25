@@ -1,0 +1,56 @@
+<div class="customer-container">
+	<div class="container-fluid">
+		<div class="row row1">
+			<div class="col-md-12">
+			    <h4>已取消订单列表</h4>
+			</div>
+		</div>
+		<div ng-show="loadingData">
+			<div class="row" style="height:400px;padding-top:80px;">
+				<div class="col-md-6 col-md-offset-3 text-center">
+					<img src="../images/loading1.gif" /><span>努力加载中……</span>
+				</div>
+			</div>
+		</div>
+		<div ng-hide="loadingData">
+			<div class="row row2" >
+				<table class="transaction-table">
+					<thead>
+						<tr>
+					        <th>交易日期</th>
+					        <th>发货日期</th>
+					        <th>银行卡支付</th>
+					        <th>订单ID</th>
+					        <th>用户名字(手机号)</th>
+					        <th>交易金额</th>
+					        <th></th>
+					    </tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="order in orderList" style="cursor: pointer;">
+							<td ng-bind="order.created_on|dateTransfer"></td>
+							<td ng-bind="order.shipping_created_on|dateTransfer"></td>
+							<td ng-bind="order.pay_type == 2?'是':'否'"></td>
+							<td ><a ng-bind="order.order_id" ng-click="getOrderDetail(order)"></a></td>
+							<td>{{order.user_name}}（{{order.phone}}）</td>
+							<td ng-bind="order.grand_total | currency : '￥'"></td>
+							<td ng-click="getOrderDetail(order)" >已取消</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="row row2 pagnation" ng-cloak>
+				<div class="col-md-6">
+		            <span class="total">共 {{numRecords}} 条记录 &nbsp;&nbsp;每页显示 &nbsp;</span> 
+		            <select  class="pageSize" class="form-control" ng-model="pageSize" ng-options="p.size for p in pageSizeOptions"></select>
+		            <span class="total">条记录</span> 
+	            </div>
+	            <div class="col-md-3 col-md-offset-3">
+		            <div class="pull-left arrow" ng-click="previousPage()" style="margin-right:8px;margin-left:20px;"><i class="fa fa-chevron-left"></i></div>
+		            <div class="pull-left"><input type="text" number-only-input  class="page" ng-model="currentPage"/>/<span style="font-size:20px;color:#787878;">{{numPages}}</span></div>
+		            <div class="pull-left arrow" ng-click="nextPage()" style="margin-left:8px;"><i class="fa fa-chevron-right" ></i></div>
+	            </div>
+			</div>
+		</div>
+	</div>
+</div>

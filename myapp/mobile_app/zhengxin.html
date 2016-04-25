@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>授权个人征信报告</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimal-ui" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="yes" />
+	<link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="/stylesheets/mobile.css">
+	<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="/bower_components/angular/angular.min.js"></script>
+
+</head>
+<body ng-app="GongjijinApp" ng-controller="ZhengXinController">
+	<div class="container-fluid" >
+		<div class="row">
+			<h3 class="text-center title col-xs-10 col-xs-offset-1">授权个人征信</h3>
+			<input type="hidden" name="user_id" value="<%=user_id%>" id="userId">
+			<input type="hidden" name="session_token" value="<%=session_token%>" id="sessionToken">
+		</div>
+		<div class="row">
+			<form name="zhengxinForm" id="zhengxinForm" class="mobile-form">
+			    
+			    <div class="form-group">
+			       <label for="username">用户名</label>
+			       <input type="text" class="form-control" id="username" placeholder="请输入您的征信用户名" maxlength="32" name="username" ng-model="username" autocomplete="off" required>
+			    </div>
+
+			    <div class="form-group">
+			       <label for="password">密码</label>
+			       <input type="password" class="form-control" id="password" placeholder="请输入您的征信密码" maxlength="32" name="password" ng-model="password" autocomplete="off" required>
+			    </div>
+
+			    <div class="form-group">
+			       <label for="identityCode">身份验证码</label>
+			       <input type="text" class="form-control" id="identityCode" placeholder="请输入您的身份验证码" maxlength="32" name="identityCode" ng-model="identityCode" autocomplete="off" required>
+			    </div>
+			    <div class="form-group valid-code">
+			       <label for="validCode">验证码</label>
+			       <input type="text" class="form-control" id="validCode" placeholder="请输入验证码" maxlength="32" name="validCode" ng-model="validCode" autocomplete="off" required>
+			       <img ng-src="{{validImage}}" ng-click="getImage()">
+			    </div>
+			    <div class="form-group">
+			        <label class="pull-left" ng-cloak style="color:red;font-size:1.4em;">{{errorMsg}}</label>
+			    </div>
+			    <div class="form-group">
+			        <span class="pull-left" ng-click="shouquanxianyi()">同意<span style="color:rgb(172,0,24);">《个人征信报告授权协议》</span></span>
+			        <span class="pull-right" style="color:rgb(172,0,24)" ng-click="shouquan()">如何授权？</span>
+			        <button type="button" id="checkout-login" class="submit-btn" ng-click="validZhengXin()" ng-disabled="loading">立刻授权&nbsp;&nbsp;<span ng-show="loading"><i class="fa fa-gear fa-spin" ></i></span></button>
+			    </div>
+			</form>
+		</div>
+	</div>
+</body>
+	
+	<script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+	<script src="/mobile/gongjijin.js"></script>
+</html>

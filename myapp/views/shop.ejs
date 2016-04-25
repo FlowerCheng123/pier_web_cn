@@ -1,0 +1,40 @@
+<%include ./nav%>
+<script src="/bower_components/angular/angular.min.js"></script>
+<script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+<div class="shop-top"></div>
+<div class="container pier-shop-index" ng-app="PierShop1">
+    <div class="row">
+	    <div class="col-md-5">
+	    	<h3>美国人才知道的优质品牌</h3>
+	    	<p>注重生活品质的您，光知道GNC和Costco怎么够？美国人都会用什么样的产品来犒劳忙碌的自己？<br>品而的美国团队精心挑选了美国优质的本土品牌，把美国人眼中最高质量的产品隆重推荐给您。</p>
+	    </div>
+	    <div class="col-md-7">
+		    <!-- <div ng-controller="CarouselCtrl" class="shop-carouse">
+			    <uib-carousel interval="myInterval" no-wrap="noWrapSlides">
+			      <uib-slide ng-repeat="slide in slides" active="slide.active" actual>
+			        <img ng-src="{{slide.image}}" style="margin:auto;">
+			        <div class="carousel-caption"></div>
+			        <aside class="carousel-text">
+				        <img ng-src="{{slide.banner}}" class="pull-left">
+				        <span>{{slide.text}}</span>
+				    </aside>
+			      </uib-slide>
+			    </uib-carousel>
+			</div> -->
+			<img src="images/merchant-ad.jpg" class="img-responsive">
+	    </div>
+    </div>
+    <div class="row">
+	    <div class="col-md-6">
+	    	<img src="images/shop-plane.png" class="img-responsive">
+	    </div>
+	    <div class="col-md-6" style="padding-left:4%;">
+	    	<h3>前所未有的低价</h3>
+	    	<p>我们的产品全部由品牌方直接提供，没有任何中间商，海外直送，确保产品严格品质的同时也拥有平易近人的价格。</p>
+	    </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br>
+</div>
+<script src="/bower_components/angular-animate/angular-animate.min.js"></script>
+<script src="/javascripts/shop.js"></script>
+<%include ./footer%>

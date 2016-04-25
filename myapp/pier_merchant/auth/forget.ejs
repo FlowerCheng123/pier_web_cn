@@ -1,0 +1,40 @@
+<%include ../header%>
+<div class="container" ng-app="LoginApp" ng-controller="ForgetController">
+    <div class="auth-fence">
+		<div class="title">
+			<p>找回密码</p>
+    	</div>
+    	<div class="auth-form">
+	    	<form class="register-form" id="loginForm" style="margin-top:40px;">
+	    	    <article> 
+				    <p class="auth-error" ng-show="forgetError"><span ng-bind="forgetErrorMsg"></span></p>
+				    <div class="auth-group">
+					    <section class="section1">
+				    	    <label for="email">注册邮箱：</label>
+					    </section>
+					    <section class="section2">
+				    	    <input class="form-control" placeholder="请输入您的邮箱" name="email"  id="email" ng-model="email"  required/>
+					    </section>
+					    <section class="section3" >
+					    </section>
+				    </div>
+			    </article>
+		        <article>
+				    
+				    <div class="auth-group">
+					    <section class="section1">
+					    </section>
+					    <section class="section2" >
+				    	    <button type="submit" ng-click="next()">下一步&nbsp;&nbsp;<i class="fa fa-gear fa-spin" ng-show="forgetFlag" ng-cloak></i></button>
+					    </section>
+					    <section class="section3">
+				    	    <p></p>
+					    </section>
+				    </div>
+			    </article>
+	    	</form>
+    	</div>
+    </div>
+</div>
+<script src="../pier_merchant/js/login.js"></script>
+<%include ../footer-2%>

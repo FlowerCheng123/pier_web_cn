@@ -1,0 +1,146 @@
+<!--page2-->
+   <div class="row" ng-controller="Activation2Controller">
+        <div class="col-md-12 text-center">
+		  	<h3>填写资料</h3>
+		  	<div class="info-step">
+			  	<span class="circle">2/3</span><span>企业证照信息</span>
+		  	</div>
+	    </div>
+	    <div ng-show="loadingData" style="height:400px;padding-top:180px;">
+		    <div class="col-md-6 col-md-offset-3 text-center">
+				<img src="../images/loading1.gif" /><span>努力加载中……</span>
+			</div>
+		</div>
+	    <div class="col-md-10 col-md-offset-1" ng-hide="loadingData">
+		    <form class="info-form">
+  	    	    <article> 
+				    <div class="info-group">
+					    <section class="section1">
+				    	    <label for="businessLisence">营业执照号：</label>
+					    </section>
+					    <section class="section2">
+				    	    <input class="form-control" placeholder="请输入贵公司的营业执照号" name="businessLisence"  ng-model="businessLicense"  required maxlength="15" />
+					    </section>
+					    <section class="section3" >
+					    </section>
+				    </div>
+			    </article>
+			    <article> 
+				    <div class="info-group">
+					    <section class="section1">
+					    </section>
+					    <section class="section4">
+				    	   <img ng-src="{{imageUrl.businessLicense}}" class="uploadImg1">
+					    </section>
+					    <section class="section5">
+						    <button class="upload-btn" id="businessLisence" ng-click="uploadImage(businessLisenceUploader)"></button>
+						    <p class="upload-desc">请上传营业执照扫描件，支持jpg,png格式，文件大小需少于2M。</p>
+					    </section>
+				    </div>
+			    </article>
+			    <article> 
+				    <div class="info-group">
+					    <section class="section1">
+				    	    <label for="institutionCode">组织机构代码：</label>
+					    </section>
+					    <section class="section2">
+				    	    <input class="form-control" placeholder="请输入贵公司的营业执照号" name="institutionCode"   ng-model="institutionCode"  required maxlength="9"/>
+					    </section>
+					    <section class="section3" >
+					    </section>
+				    </div>
+			    </article>
+			    <article> 
+				    <div class="info-group">
+					    <section class="section1">
+					    </section>
+					    <section class="section4">
+				    	   <img ng-src="{{imageUrl.institutionCode}}" class="uploadImg">
+					    </section>
+					    <section class="section5">
+						    <button class="upload-btn" type="button" id="institutionCode" ng-click="uploadImage(institutionCodeUploader)"></button>
+						    <p class="upload-desc">请上传组织机构代码证扫描件，支持jpg,png格式，文件大小需少于2M。</p>
+					    </section>
+				    </div>
+			    </article>
+			    <article> 
+				    <div class="info-group">
+					    <section class="section1">
+						    <label for="taxId">税务登记号：</label>
+					    </section>
+					    <section class="section2">
+				    	    <input class="form-control" placeholder="请输入贵公司的税务登记证号" name="taxId"   ng-model="taxId"  required maxlength="20"/>
+					    </section>
+					    <section class="section3" >
+					    </section>
+				    </div>
+			    </article>
+			    <article> 
+				    <div class="info-group">
+					    <section class="section1">
+					    </section>
+					    <section class="section4">
+				    	   <img ng-src="{{imageUrl.taxId}}" class="uploadImg">
+					    </section>
+					    <section class="section5">
+						    <button class="upload-btn" type="button" id="taxId" ng-click="uploadImage(taxIdUploader)"></button>
+						    <p class="upload-desc">请上传税务登记证照扫描件，支持jpg,png格式，文件大小需少于2M。</p>
+					    </section>
+				    </div>
+			    </article>
+			    <article> 
+				    <div class="info-group">
+					    <section class="section1">
+						    <label for="businessEntity">法人姓名：</label>
+					    </section>
+					    <section class="section2">
+				    	    <input class="form-control" placeholder="请输入贵公司的法人姓名" name="businessEntity"  id="businessEntity" ng-model="businessEntity"  required/>
+					    </section>
+					    <section class="section3" >
+					    </section>
+				    </div>
+			    </article>
+			    <article> 
+				    <div class="info-group">
+					    <section class="section1">
+						    <label for="businessEntityIdCard">法人身份证号：</label>
+					    </section>
+					    <section class="section2">
+				    	    <input class="form-control" placeholder="请输入贵公司的法人身份证号" name="businessEntityIdCard"  id="businessEntityIdCard" maxlength="18" id-card-input ng-model="businessEntityIdCard"  required/>
+					    </section>
+					    <section class="section3" >
+					    </section>
+				    </div>
+			    </article>
+			    <article> 
+				    <div class="info-group">
+					    <section class="section1">
+					    </section>
+					    <section class="section4">
+				    	   <img ng-src="{{imageUrl.businessEntityIdCard1}}" class="uploadImg" />
+				    	   <button class="upload-btn" id="businessEntityIdCard1" ng-click="uploadImage(businessEntityIdCard1Uploader)"></button>
+					    </section>
+					    <section class="section4">
+				    	   <img ng-src="{{imageUrl.businessEntityIdCard2}}" class="uploadImg"/>
+				    	   <button class="upload-btn" id="businessEntityIdCard2" ng-click="uploadImage(businessEntityIdCard2Uploader)"></button>
+					    </section>
+				    </div>
+				    <p style="margin-top:-30px;margin-left:160px;margin-right:130px;font-size:12px;" >请上传法人身份证件照正反面扫描件，支持jpg,png格式，文件大小需少于2M。</p>
+			    </article>
+
+			    <article style="margin-top:40px;"> 
+				    <p class="error-message" ng-bind="errorMsg"></p> 
+				    <div class="info-group">
+					    <section class="section1">
+					    </section>
+					    <section class="section2">
+						    <button type="button" ng-click="previousStep()" class="double-part-btn">上一步</button>
+				    	    <button type="button" ng-click="saveInfomation2()" class="double-part-btn">下一步&nbsp;&nbsp;<i class="fa fa-gear fa-spin" ng-show="saveInfoFlag" ng-cloak></i></button>
+					    </section>
+					    <section class="section3" >
+					    </section>
+				    </div>
+			    </article>
+		    </form>
+	    </div>
+   </div>

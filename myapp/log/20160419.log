@@ -1,0 +1,2275 @@
+[2016-04-19 09:55:04.485] [INFO] console - website server start ====================
+[2016-04-19 09:55:05.730] [INFO] ./log/20160419 - The server is starting
+[2016-04-19 09:55:14.933] [INFO] ./log/20160419 - get home page
+[2016-04-19 09:55:17.671] [INFO] ./log/20160419 - get corporation page
+[2016-04-19 09:55:34.462] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/manage/signin?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: 'c514619e-05d1-11e6-8a67-6c92bf21d955',
+     merchant_id: 'MC0000006975',
+     status_bit: '15' } }
+[2016-04-19 09:55:34.481] [INFO] console - ression Session {
+  cookie: 
+   { path: '/',
+     _expires: Tue Apr 19 2016 10:55:34 GMT+0800 (中国标准时间),
+     originalMaxAge: 3600000,
+     httpOnly: true,
+     secure: false },
+  pier_merchant: 
+   { status_bit: '15',
+     merchant_id: 'MC0000006975',
+     session_token: 'c514619e-05d1-11e6-8a67-6c92bf21d955',
+     email: 'pierup@163.com' } }
+[2016-04-19 09:55:34.488] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'c514619e-05d1-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 09:55:34.819] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'c514619e-05d1-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 09:55:35.033] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'c514619e-05d1-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 09:55:35.105] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/dashboard/get_merchant_dashboard?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { total_success_transactions: '73',
+     gross_revenue: '-89015.00',
+     total_customers: '56',
+     items: 
+      [ [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object] ] } }
+[2016-04-19 09:55:36.663] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'c514619e-05d1-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 09:55:36.738] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_list?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: 'c514619e-05d1-11e6-8a67-6c92bf21d955',
+     total_count: '2',
+     order_list: [ [Object], [Object] ] } }
+[2016-04-19 09:55:36.739] [INFO] console - refresh token before: c514619e-05d1-11e6-8a67-6c92bf21d955
+[2016-04-19 09:55:36.740] [INFO] console - refresh token later: c514619e-05d1-11e6-8a67-6c92bf21d955
+[2016-04-19 09:55:42.256] [INFO] console - ression Session {
+  cookie: 
+   { path: '/',
+     _expires: Tue Apr 19 2016 10:55:38 GMT+0800 (中国标准时间),
+     originalMaxAge: 3600000,
+     httpOnly: true,
+     secure: false },
+  pier_merchant: 
+   { status_bit: '15',
+     merchant_id: 'MC0000006975',
+     session_token: 'c514619e-05d1-11e6-8a67-6c92bf21d955',
+     email: 'pierup@163.com' } }
+[2016-04-19 09:55:42.258] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'c514619e-05d1-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 09:55:42.687] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'c514619e-05d1-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 09:55:42.755] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'c514619e-05d1-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 09:55:42.854] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_list?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: 'c514619e-05d1-11e6-8a67-6c92bf21d955',
+     total_count: '2',
+     order_list: [ [Object], [Object] ] } }
+[2016-04-19 09:55:42.855] [INFO] console - refresh token before: c514619e-05d1-11e6-8a67-6c92bf21d955
+[2016-04-19 09:55:42.856] [INFO] console - refresh token later: c514619e-05d1-11e6-8a67-6c92bf21d955
+[2016-04-19 09:56:01.240] [INFO] console - website server start ====================
+[2016-04-19 09:56:01.310] [INFO] ./log/20160419 - The server is starting
+[2016-04-19 09:56:01.583] [INFO] console - ression Session {
+  cookie: 
+   { path: '/',
+     _expires: Tue Apr 19 2016 10:56:01 GMT+0800 (中国标准时间),
+     originalMaxAge: 3600000,
+     httpOnly: true,
+     secure: false } }
+[2016-04-19 09:56:01.599] [INFO] console - checkout Auth for merchant {}
+[2016-04-19 09:56:02.273] [INFO] console - website server start ====================
+[2016-04-19 09:56:02.342] [INFO] ./log/20160419 - The server is starting
+[2016-04-19 09:56:15.729] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/manage/signin?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: 'ddac2ca5-05d1-11e6-8a67-6c92bf21d955',
+     merchant_id: 'MC0000006975',
+     status_bit: '15' } }
+[2016-04-19 09:56:15.755] [INFO] console - ression Session {
+  cookie: 
+   { path: '/',
+     _expires: Tue Apr 19 2016 10:56:15 GMT+0800 (中国标准时间),
+     originalMaxAge: 3600000,
+     httpOnly: true,
+     secure: false },
+  pier_merchant: 
+   { status_bit: '15',
+     merchant_id: 'MC0000006975',
+     session_token: 'ddac2ca5-05d1-11e6-8a67-6c92bf21d955',
+     email: 'pierup@163.com' } }
+[2016-04-19 09:56:15.758] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'ddac2ca5-05d1-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 09:56:16.404] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'ddac2ca5-05d1-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 09:56:16.680] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'ddac2ca5-05d1-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 09:56:16.745] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/dashboard/get_merchant_dashboard?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { total_success_transactions: '73',
+     gross_revenue: '-89015.00',
+     total_customers: '56',
+     items: 
+      [ [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object] ] } }
+[2016-04-19 09:56:20.305] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'ddac2ca5-05d1-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 09:56:20.413] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_list?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: 'ddac2ca5-05d1-11e6-8a67-6c92bf21d955',
+     total_count: '2',
+     order_list: [ [Object], [Object] ] } }
+[2016-04-19 09:56:20.415] [INFO] console - refresh token before: ddac2ca5-05d1-11e6-8a67-6c92bf21d955
+[2016-04-19 09:56:20.415] [INFO] console - refresh token later: ddac2ca5-05d1-11e6-8a67-6c92bf21d955
+[2016-04-19 10:02:58.257] [INFO] console - website server start ====================
+[2016-04-19 10:02:58.327] [INFO] ./log/20160419 - The server is starting
+[2016-04-19 10:02:59.231] [INFO] console - website server start ====================
+[2016-04-19 10:02:59.296] [INFO] ./log/20160419 - The server is starting
+[2016-04-19 10:03:05.438] [INFO] console - checkout Auth for merchant {}
+[2016-04-19 10:03:08.767] [INFO] console - checkout Auth for merchant {}
+[2016-04-19 10:03:10.088] [INFO] console - ression Session {
+  cookie: 
+   { path: '/',
+     _expires: Tue Apr 19 2016 11:03:08 GMT+0800 (中国标准时间),
+     originalMaxAge: 3600000,
+     httpOnly: true,
+     secure: false } }
+[2016-04-19 10:03:10.090] [INFO] console - checkout Auth for merchant {}
+[2016-04-19 10:03:20.136] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/manage/signin?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: 'daa50a72-05d2-11e6-8a67-6c92bf21d955',
+     merchant_id: 'MC0000006975',
+     status_bit: '15' } }
+[2016-04-19 10:03:20.143] [INFO] console - ression Session {
+  cookie: 
+   { path: '/',
+     _expires: Tue Apr 19 2016 11:03:20 GMT+0800 (中国标准时间),
+     originalMaxAge: 3599999,
+     httpOnly: true,
+     secure: false },
+  pier_merchant: 
+   { status_bit: '15',
+     merchant_id: 'MC0000006975',
+     session_token: 'daa50a72-05d2-11e6-8a67-6c92bf21d955',
+     email: 'pierup@163.com' } }
+[2016-04-19 10:03:20.149] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'daa50a72-05d2-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 10:03:20.507] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'daa50a72-05d2-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 10:03:20.789] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'daa50a72-05d2-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 10:03:20.857] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/dashboard/get_merchant_dashboard?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { total_success_transactions: '73',
+     gross_revenue: '-89015.00',
+     total_customers: '56',
+     items: 
+      [ [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object] ] } }
+[2016-04-19 10:03:22.140] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'daa50a72-05d2-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 10:03:22.256] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_list?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: 'daa50a72-05d2-11e6-8a67-6c92bf21d955',
+     total_count: '2',
+     order_list: [ [Object], [Object] ] } }
+[2016-04-19 10:03:22.259] [INFO] console - refresh token before: daa50a72-05d2-11e6-8a67-6c92bf21d955
+[2016-04-19 10:03:22.260] [INFO] console - refresh token later: daa50a72-05d2-11e6-8a67-6c92bf21d955
+[2016-04-19 10:03:29.685] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'daa50a72-05d2-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 10:03:29.734] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/search_order?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: 'daa50a72-05d2-11e6-8a67-6c92bf21d955',
+     total_count: '2',
+     order_list: [ [Object], [Object] ] } }
+[2016-04-19 10:03:29.736] [INFO] console - refresh token before: daa50a72-05d2-11e6-8a67-6c92bf21d955
+[2016-04-19 10:03:29.737] [INFO] console - refresh token later: daa50a72-05d2-11e6-8a67-6c92bf21d955
+[2016-04-19 10:03:51.237] [INFO] console - website server start ====================
+[2016-04-19 10:03:51.303] [INFO] ./log/20160419 - The server is starting
+[2016-04-19 10:03:52.241] [INFO] console - website server start ====================
+[2016-04-19 10:03:52.307] [INFO] ./log/20160419 - The server is starting
+[2016-04-19 10:04:27.794] [INFO] console - ression Session {
+  cookie: 
+   { path: '/',
+     _expires: Tue Apr 19 2016 11:04:27 GMT+0800 (中国标准时间),
+     originalMaxAge: 3600000,
+     httpOnly: true,
+     secure: false } }
+[2016-04-19 10:04:27.806] [INFO] console - checkout Auth for merchant {}
+[2016-04-19 10:04:38.033] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/manage/signin?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: '09135ac4-05d3-11e6-8a67-6c92bf21d955',
+     merchant_id: 'MC0000006975',
+     status_bit: '15' } }
+[2016-04-19 10:04:38.043] [INFO] console - ression Session {
+  cookie: 
+   { path: '/',
+     _expires: Tue Apr 19 2016 11:04:38 GMT+0800 (中国标准时间),
+     originalMaxAge: 3600000,
+     httpOnly: true,
+     secure: false },
+  pier_merchant: 
+   { status_bit: '15',
+     merchant_id: 'MC0000006975',
+     session_token: '09135ac4-05d3-11e6-8a67-6c92bf21d955',
+     email: 'pierup@163.com' } }
+[2016-04-19 10:04:38.055] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '09135ac4-05d3-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 10:04:38.473] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '09135ac4-05d3-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 10:04:38.775] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '09135ac4-05d3-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 10:04:38.836] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/dashboard/get_merchant_dashboard?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { total_success_transactions: '73',
+     gross_revenue: '-89015.00',
+     total_customers: '56',
+     items: 
+      [ [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object] ] } }
+[2016-04-19 10:04:39.457] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '09135ac4-05d3-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 10:04:39.529] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_list?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: '09135ac4-05d3-11e6-8a67-6c92bf21d955',
+     total_count: '2',
+     order_list: [ [Object], [Object] ] } }
+[2016-04-19 10:04:39.530] [INFO] console - refresh token before: 09135ac4-05d3-11e6-8a67-6c92bf21d955
+[2016-04-19 10:04:39.531] [INFO] console - refresh token later: 09135ac4-05d3-11e6-8a67-6c92bf21d955
+[2016-04-19 10:04:46.761] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '09135ac4-05d3-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 10:04:46.845] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_list?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: '09135ac4-05d3-11e6-8a67-6c92bf21d955',
+     total_count: '2',
+     order_list: [ [Object], [Object] ] } }
+[2016-04-19 10:04:46.849] [INFO] console - refresh token before: 09135ac4-05d3-11e6-8a67-6c92bf21d955
+[2016-04-19 10:04:46.852] [INFO] console - refresh token later: 09135ac4-05d3-11e6-8a67-6c92bf21d955
+[2016-04-19 10:05:08.380] [INFO] console - ression Session {
+  cookie: 
+   { path: '/',
+     _expires: Tue Apr 19 2016 11:04:46 GMT+0800 (中国标准时间),
+     originalMaxAge: 3600000,
+     httpOnly: true,
+     secure: false },
+  pier_merchant: 
+   { status_bit: '15',
+     merchant_id: 'MC0000006975',
+     session_token: '09135ac4-05d3-11e6-8a67-6c92bf21d955',
+     email: 'pierup@163.com' } }
+[2016-04-19 10:05:08.382] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '09135ac4-05d3-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 10:05:08.787] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '09135ac4-05d3-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 10:05:08.878] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '09135ac4-05d3-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 10:05:08.957] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_list?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: '09135ac4-05d3-11e6-8a67-6c92bf21d955',
+     total_count: '2',
+     order_list: [ [Object], [Object] ] } }
+[2016-04-19 10:05:08.959] [INFO] console - refresh token before: 09135ac4-05d3-11e6-8a67-6c92bf21d955
+[2016-04-19 10:05:08.960] [INFO] console - refresh token later: 09135ac4-05d3-11e6-8a67-6c92bf21d955
+[2016-04-19 10:05:27.842] [INFO] console - ression Session {
+  cookie: 
+   { path: '/',
+     _expires: Tue Apr 19 2016 11:05:11 GMT+0800 (中国标准时间),
+     originalMaxAge: 3600000,
+     httpOnly: true,
+     secure: false },
+  pier_merchant: 
+   { status_bit: '15',
+     merchant_id: 'MC0000006975',
+     session_token: '09135ac4-05d3-11e6-8a67-6c92bf21d955',
+     email: 'pierup@163.com' } }
+[2016-04-19 10:05:27.844] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '09135ac4-05d3-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 10:05:29.166] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '09135ac4-05d3-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 10:05:42.613] [INFO] console - ression Session {
+  cookie: 
+   { path: '/',
+     _expires: Tue Apr 19 2016 11:05:29 GMT+0800 (中国标准时间),
+     originalMaxAge: 3600000,
+     httpOnly: true,
+     secure: false },
+  pier_merchant: 
+   { status_bit: '15',
+     merchant_id: 'MC0000006975',
+     session_token: '09135ac4-05d3-11e6-8a67-6c92bf21d955',
+     email: 'pierup@163.com' } }
+[2016-04-19 10:05:42.615] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '09135ac4-05d3-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 10:05:42.997] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '09135ac4-05d3-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 10:06:11.470] [INFO] console - ression Session {
+  cookie: 
+   { path: '/',
+     _expires: Tue Apr 19 2016 11:05:43 GMT+0800 (中国标准时间),
+     originalMaxAge: 3600000,
+     httpOnly: true,
+     secure: false },
+  pier_merchant: 
+   { status_bit: '15',
+     merchant_id: 'MC0000006975',
+     session_token: '09135ac4-05d3-11e6-8a67-6c92bf21d955',
+     email: 'pierup@163.com' } }
+[2016-04-19 10:06:11.471] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '09135ac4-05d3-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 10:06:11.857] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '09135ac4-05d3-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 10:06:29.149] [INFO] console - ression Session {
+  cookie: 
+   { path: '/',
+     _expires: Tue Apr 19 2016 11:06:12 GMT+0800 (中国标准时间),
+     originalMaxAge: 3599999,
+     httpOnly: true,
+     secure: false },
+  pier_merchant: 
+   { status_bit: '15',
+     merchant_id: 'MC0000006975',
+     session_token: '09135ac4-05d3-11e6-8a67-6c92bf21d955',
+     email: 'pierup@163.com' } }
+[2016-04-19 10:06:29.151] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '09135ac4-05d3-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 10:06:29.505] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '09135ac4-05d3-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 10:06:35.436] [INFO] console - ression Session {
+  cookie: 
+   { path: '/',
+     _expires: Tue Apr 19 2016 11:06:29 GMT+0800 (中国标准时间),
+     originalMaxAge: 3599999,
+     httpOnly: true,
+     secure: false },
+  pier_merchant: 
+   { status_bit: '15',
+     merchant_id: 'MC0000006975',
+     session_token: '09135ac4-05d3-11e6-8a67-6c92bf21d955',
+     email: 'pierup@163.com' } }
+[2016-04-19 10:06:35.438] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '09135ac4-05d3-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 10:06:37.974] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '09135ac4-05d3-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 10:06:38.386] [INFO] console - get response body { code: '200', message: 'OK', result: {} }
+[2016-04-19 10:06:49.089] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/manage/signin?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: '5730d0ca-05d3-11e6-8a67-6c92bf21d955',
+     merchant_id: 'MC0000006975',
+     status_bit: '15' } }
+[2016-04-19 10:06:49.111] [INFO] console - ression Session {
+  cookie: 
+   { path: '/',
+     _expires: Tue Apr 19 2016 11:06:49 GMT+0800 (中国标准时间),
+     originalMaxAge: 3599999,
+     httpOnly: true,
+     secure: false },
+  pier_merchant: 
+   { status_bit: '15',
+     merchant_id: 'MC0000006975',
+     session_token: '5730d0ca-05d3-11e6-8a67-6c92bf21d955',
+     email: 'pierup@163.com' } }
+[2016-04-19 10:06:49.114] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '5730d0ca-05d3-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 10:06:49.466] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '5730d0ca-05d3-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 10:06:49.691] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '5730d0ca-05d3-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 10:06:49.764] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/dashboard/get_merchant_dashboard?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { total_success_transactions: '73',
+     gross_revenue: '-89015.00',
+     total_customers: '56',
+     items: 
+      [ [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object] ] } }
+[2016-04-19 10:06:50.673] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '5730d0ca-05d3-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 10:06:50.746] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_list?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: '5730d0ca-05d3-11e6-8a67-6c92bf21d955',
+     total_count: '2',
+     order_list: [ [Object], [Object] ] } }
+[2016-04-19 10:06:50.748] [INFO] console - refresh token before: 5730d0ca-05d3-11e6-8a67-6c92bf21d955
+[2016-04-19 10:06:50.749] [INFO] console - refresh token later: 5730d0ca-05d3-11e6-8a67-6c92bf21d955
+[2016-04-19 10:06:56.349] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '5730d0ca-05d3-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 10:06:56.400] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/search_order?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: '5730d0ca-05d3-11e6-8a67-6c92bf21d955',
+     total_count: '1',
+     order_list: [ [Object] ] } }
+[2016-04-19 10:06:56.401] [INFO] console - refresh token before: 5730d0ca-05d3-11e6-8a67-6c92bf21d955
+[2016-04-19 10:06:56.402] [INFO] console - refresh token later: 5730d0ca-05d3-11e6-8a67-6c92bf21d955
+[2016-04-19 10:06:58.393] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '5730d0ca-05d3-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 10:06:58.453] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_detail?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { month_pay: '0.00',
+     tracking_api_url: '',
+     fee: '0.00',
+     merchant_id: 'MC0000006975',
+     term_id: '',
+     term_count: '',
+     month_charge: '0.00',
+     shipping_created_on: '',
+     logistics_id: '',
+     session_token: '5730d0ca-05d3-11e6-8a67-6c92bf21d955',
+     order_status: '3',
+     shipping_company_id: '',
+     created_on: '20160413224728',
+     phone: '13849286462',
+     sub_total: '255.00',
+     receiver_name: '韩红玉',
+     receiver_address: '河南省安阳市铁西区河南省安阳市殷都区铁西路南仓街开元公寓',
+     grand_total: '255.00',
+     receiver_phone: '18337251917',
+     order_id: 'OR0000263969',
+     items: [ [Object] ] } }
+[2016-04-19 10:06:58.455] [INFO] console - refresh token before: 5730d0ca-05d3-11e6-8a67-6c92bf21d955
+[2016-04-19 10:06:58.455] [INFO] console - refresh token later: 5730d0ca-05d3-11e6-8a67-6c92bf21d955
+[2016-04-19 10:32:15.077] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '5730d0ca-05d3-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 10:32:15.263] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_list?platform=1 { code: '500', message: 'Server Error', result: null }
+[2016-04-19 10:32:21.554] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '5730d0ca-05d3-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 10:32:21.691] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_list?platform=1 { code: '500', message: 'Server Error', result: null }
+[2016-04-19 10:52:15.577] [INFO] console - ression Session {
+  cookie: 
+   { path: '/',
+     _expires: Tue Apr 19 2016 11:32:21 GMT+0800 (中国标准时间),
+     originalMaxAge: 3599999,
+     httpOnly: true,
+     secure: false },
+  pier_merchant: 
+   { status_bit: '15',
+     merchant_id: 'MC0000006975',
+     session_token: '5730d0ca-05d3-11e6-8a67-6c92bf21d955',
+     email: 'pierup@163.com' } }
+[2016-04-19 10:52:15.579] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '5730d0ca-05d3-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 10:52:15.977] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '5730d0ca-05d3-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 10:52:16.059] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '5730d0ca-05d3-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 10:52:16.109] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_list?platform=1 { code: '1001', message: '会话已过期，请重新登录', result: {} }
+[2016-04-19 10:52:17.229] [INFO] console - ression Session {
+  cookie: 
+   { path: '/',
+     _expires: Tue Apr 19 2016 11:52:17 GMT+0800 (中国标准时间),
+     originalMaxAge: 3599999,
+     httpOnly: true,
+     secure: false },
+  pier_merchant: 
+   { status_bit: '15',
+     merchant_id: 'MC0000006975',
+     session_token: '5730d0ca-05d3-11e6-8a67-6c92bf21d955',
+     email: 'pierup@163.com' } }
+[2016-04-19 10:52:17.231] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '5730d0ca-05d3-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 10:52:17.613] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '5730d0ca-05d3-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 10:52:17.900] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '5730d0ca-05d3-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 10:52:17.956] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/dashboard/get_merchant_dashboard?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { total_success_transactions: '73',
+     gross_revenue: '-89015.00',
+     total_customers: '56',
+     items: 
+      [ [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object] ] } }
+[2016-04-19 10:52:20.653] [INFO] console - get response body { code: '200', message: 'OK', result: {} }
+[2016-04-19 10:52:35.463] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/manage/signin?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: 'bc2ca4aa-05d9-11e6-8a67-6c92bf21d955',
+     merchant_id: 'MC0000006975',
+     status_bit: '15' } }
+[2016-04-19 10:52:35.469] [INFO] console - ression Session {
+  cookie: 
+   { path: '/',
+     _expires: Tue Apr 19 2016 11:52:35 GMT+0800 (中国标准时间),
+     originalMaxAge: 3599999,
+     httpOnly: true,
+     secure: false },
+  pier_merchant: 
+   { status_bit: '15',
+     merchant_id: 'MC0000006975',
+     session_token: 'bc2ca4aa-05d9-11e6-8a67-6c92bf21d955',
+     email: 'pierup@163.com' } }
+[2016-04-19 10:52:35.475] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'bc2ca4aa-05d9-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 10:52:35.884] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'bc2ca4aa-05d9-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 10:52:36.189] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'bc2ca4aa-05d9-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 10:52:36.287] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/dashboard/get_merchant_dashboard?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { total_success_transactions: '73',
+     gross_revenue: '-89015.00',
+     total_customers: '56',
+     items: 
+      [ [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object] ] } }
+[2016-04-19 10:52:37.441] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'bc2ca4aa-05d9-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 10:52:37.512] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'bc2ca4aa-05d9-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 10:52:37.563] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/dashboard/profile?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { business_name: '品而商城',
+     address_city_id: '3',
+     agent_name: 'Pier',
+     merchant_id: 'MC0000006975',
+     agent_phone: '13248269098',
+     address_province_id: '03',
+     address_district_id: '37',
+     status_bit: '15',
+     zip_code: '021',
+     session_token: 'bc2ca4aa-05d9-11e6-8a67-6c92bf21d955',
+     office_phone: '19888956',
+     address_detail: '郭守敬路居里路123号2号楼234室',
+     phone: '021-19888956',
+     postal_code: '000000',
+     email: 'pierup@163.com',
+     web_site: 'www.pierup.cn' } }
+[2016-04-19 10:52:37.568] [INFO] console - refresh token before: bc2ca4aa-05d9-11e6-8a67-6c92bf21d955
+[2016-04-19 10:52:37.569] [INFO] console - refresh token later: bc2ca4aa-05d9-11e6-8a67-6c92bf21d955
+[2016-04-19 10:52:37.569] [INFO] console - refresh status bit before: 15
+[2016-04-19 10:52:37.571] [INFO] console - refresh status bit later: 15
+[2016-04-19 10:52:41.634] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'bc2ca4aa-05d9-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 10:52:41.699] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_list?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: 'bc2ca4aa-05d9-11e6-8a67-6c92bf21d955',
+     total_count: '770',
+     order_list: 
+      [ [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object] ] } }
+[2016-04-19 10:52:41.701] [INFO] console - refresh token before: bc2ca4aa-05d9-11e6-8a67-6c92bf21d955
+[2016-04-19 10:52:41.701] [INFO] console - refresh token later: bc2ca4aa-05d9-11e6-8a67-6c92bf21d955
+[2016-04-19 10:52:42.971] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'bc2ca4aa-05d9-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 10:52:43.028] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_list?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: 'bc2ca4aa-05d9-11e6-8a67-6c92bf21d955',
+     total_count: '770',
+     order_list: 
+      [ [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object] ] } }
+[2016-04-19 10:52:43.030] [INFO] console - refresh token before: bc2ca4aa-05d9-11e6-8a67-6c92bf21d955
+[2016-04-19 10:52:43.031] [INFO] console - refresh token later: bc2ca4aa-05d9-11e6-8a67-6c92bf21d955
+[2016-04-19 11:04:11.243] [INFO] console - ression Session {
+  cookie: 
+   { path: '/',
+     _expires: Tue Apr 19 2016 11:52:43 GMT+0800 (中国标准时间),
+     originalMaxAge: 3599999,
+     httpOnly: true,
+     secure: false },
+  pier_merchant: 
+   { status_bit: '15',
+     merchant_id: 'MC0000006975',
+     session_token: 'bc2ca4aa-05d9-11e6-8a67-6c92bf21d955',
+     email: 'pierup@163.com' } }
+[2016-04-19 11:04:11.244] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'bc2ca4aa-05d9-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:04:11.752] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'bc2ca4aa-05d9-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:04:11.825] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'bc2ca4aa-05d9-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:04:11.948] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_list?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: 'bc2ca4aa-05d9-11e6-8a67-6c92bf21d955',
+     total_count: '770',
+     order_list: 
+      [ [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object] ] } }
+[2016-04-19 11:04:11.949] [INFO] console - refresh token before: bc2ca4aa-05d9-11e6-8a67-6c92bf21d955
+[2016-04-19 11:04:11.950] [INFO] console - refresh token later: bc2ca4aa-05d9-11e6-8a67-6c92bf21d955
+[2016-04-19 11:04:12.827] [INFO] console - get response body { code: '200', message: 'OK', result: {} }
+[2016-04-19 11:04:25.647] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/manage/signin?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: '637c0bc4-05db-11e6-8a67-6c92bf21d955',
+     merchant_id: 'MC0000006975',
+     status_bit: '15' } }
+[2016-04-19 11:04:25.653] [INFO] console - ression Session {
+  cookie: 
+   { path: '/',
+     _expires: Tue Apr 19 2016 12:04:25 GMT+0800 (中国标准时间),
+     originalMaxAge: 3599999,
+     httpOnly: true,
+     secure: false },
+  pier_merchant: 
+   { status_bit: '15',
+     merchant_id: 'MC0000006975',
+     session_token: '637c0bc4-05db-11e6-8a67-6c92bf21d955',
+     email: 'pierup@163.com' } }
+[2016-04-19 11:04:25.661] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '637c0bc4-05db-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:04:26.080] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '637c0bc4-05db-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:04:26.351] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '637c0bc4-05db-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:04:26.503] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/dashboard/get_merchant_dashboard?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { total_success_transactions: '73',
+     gross_revenue: '-89015.00',
+     total_customers: '56',
+     items: 
+      [ [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object] ] } }
+[2016-04-19 11:04:29.331] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '637c0bc4-05db-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:04:29.402] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_list?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: '637c0bc4-05db-11e6-8a67-6c92bf21d955',
+     total_count: '2',
+     order_list: [ [Object], [Object] ] } }
+[2016-04-19 11:04:29.403] [INFO] console - refresh token before: 637c0bc4-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:04:29.404] [INFO] console - refresh token later: 637c0bc4-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:04:31.459] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '637c0bc4-05db-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:04:31.532] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_list?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: '637c0bc4-05db-11e6-8a67-6c92bf21d955',
+     total_count: '770',
+     order_list: 
+      [ [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object] ] } }
+[2016-04-19 11:04:31.537] [INFO] console - refresh token before: 637c0bc4-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:04:31.539] [INFO] console - refresh token later: 637c0bc4-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:04:36.465] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '637c0bc4-05db-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:04:36.585] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_list?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: '637c0bc4-05db-11e6-8a67-6c92bf21d955',
+     total_count: '770',
+     order_list: 
+      [ [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object] ] } }
+[2016-04-19 11:04:36.586] [INFO] console - refresh token before: 637c0bc4-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:04:36.588] [INFO] console - refresh token later: 637c0bc4-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:05:42.973] [INFO] console - ression Session {
+  cookie: 
+   { path: '/',
+     _expires: Tue Apr 19 2016 12:04:36 GMT+0800 (中国标准时间),
+     originalMaxAge: 3599999,
+     httpOnly: true,
+     secure: false },
+  pier_merchant: 
+   { status_bit: '15',
+     merchant_id: 'MC0000006975',
+     session_token: '637c0bc4-05db-11e6-8a67-6c92bf21d955',
+     email: 'pierup@163.com' } }
+[2016-04-19 11:05:42.975] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '637c0bc4-05db-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:05:43.378] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '637c0bc4-05db-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:05:43.454] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '637c0bc4-05db-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:05:43.518] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_list?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: '637c0bc4-05db-11e6-8a67-6c92bf21d955',
+     total_count: '770',
+     order_list: 
+      [ [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object] ] } }
+[2016-04-19 11:05:43.519] [INFO] console - refresh token before: 637c0bc4-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:05:43.519] [INFO] console - refresh token later: 637c0bc4-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:05:51.061] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '637c0bc4-05db-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:05:51.152] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_list?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: '637c0bc4-05db-11e6-8a67-6c92bf21d955',
+     total_count: '2',
+     order_list: [ [Object], [Object] ] } }
+[2016-04-19 11:05:51.158] [INFO] console - refresh token before: 637c0bc4-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:05:51.159] [INFO] console - refresh token later: 637c0bc4-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:05:53.356] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '637c0bc4-05db-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:05:53.419] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_list?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: '637c0bc4-05db-11e6-8a67-6c92bf21d955',
+     total_count: '770',
+     order_list: 
+      [ [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object] ] } }
+[2016-04-19 11:05:53.420] [INFO] console - refresh token before: 637c0bc4-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:05:53.420] [INFO] console - refresh token later: 637c0bc4-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:05:58.568] [INFO] console - ression Session {
+  cookie: 
+   { path: '/',
+     _expires: Tue Apr 19 2016 12:05:53 GMT+0800 (中国标准时间),
+     originalMaxAge: 3599999,
+     httpOnly: true,
+     secure: false },
+  pier_merchant: 
+   { status_bit: '15',
+     merchant_id: 'MC0000006975',
+     session_token: '637c0bc4-05db-11e6-8a67-6c92bf21d955',
+     email: 'pierup@163.com' } }
+[2016-04-19 11:05:58.570] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '637c0bc4-05db-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:05:58.982] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '637c0bc4-05db-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:05:59.058] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '637c0bc4-05db-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:05:59.121] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_list?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: '637c0bc4-05db-11e6-8a67-6c92bf21d955',
+     total_count: '770',
+     order_list: 
+      [ [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object] ] } }
+[2016-04-19 11:05:59.123] [INFO] console - refresh token before: 637c0bc4-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:05:59.123] [INFO] console - refresh token later: 637c0bc4-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:06:01.494] [INFO] console - ression Session {
+  cookie: 
+   { path: '/',
+     _expires: Tue Apr 19 2016 12:05:59 GMT+0800 (中国标准时间),
+     originalMaxAge: 3599999,
+     httpOnly: true,
+     secure: false },
+  pier_merchant: 
+   { status_bit: '15',
+     merchant_id: 'MC0000006975',
+     session_token: '637c0bc4-05db-11e6-8a67-6c92bf21d955',
+     email: 'pierup@163.com' } }
+[2016-04-19 11:06:01.495] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '637c0bc4-05db-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:06:01.748] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '637c0bc4-05db-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:06:01.798] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '637c0bc4-05db-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:06:01.863] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_list?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: '637c0bc4-05db-11e6-8a67-6c92bf21d955',
+     total_count: '770',
+     order_list: 
+      [ [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object] ] } }
+[2016-04-19 11:06:01.864] [INFO] console - refresh token before: 637c0bc4-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:06:01.865] [INFO] console - refresh token later: 637c0bc4-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:06:04.199] [INFO] console - ression Session {
+  cookie: 
+   { path: '/',
+     _expires: Tue Apr 19 2016 12:06:01 GMT+0800 (中国标准时间),
+     originalMaxAge: 3599999,
+     httpOnly: true,
+     secure: false },
+  pier_merchant: 
+   { status_bit: '15',
+     merchant_id: 'MC0000006975',
+     session_token: '637c0bc4-05db-11e6-8a67-6c92bf21d955',
+     email: 'pierup@163.com' } }
+[2016-04-19 11:06:04.201] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '637c0bc4-05db-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:06:04.351] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '637c0bc4-05db-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:06:04.386] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '637c0bc4-05db-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:06:04.459] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_list?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: '637c0bc4-05db-11e6-8a67-6c92bf21d955',
+     total_count: '770',
+     order_list: 
+      [ [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object] ] } }
+[2016-04-19 11:06:04.461] [INFO] console - refresh token before: 637c0bc4-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:06:04.461] [INFO] console - refresh token later: 637c0bc4-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:06:05.506] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '637c0bc4-05db-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:06:05.566] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_list?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: '637c0bc4-05db-11e6-8a67-6c92bf21d955',
+     total_count: '770',
+     order_list: 
+      [ [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object] ] } }
+[2016-04-19 11:06:05.570] [INFO] console - refresh token before: 637c0bc4-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:06:05.573] [INFO] console - refresh token later: 637c0bc4-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:06:06.133] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '637c0bc4-05db-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:06:06.190] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_list?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: '637c0bc4-05db-11e6-8a67-6c92bf21d955',
+     total_count: '770',
+     order_list: 
+      [ [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object] ] } }
+[2016-04-19 11:06:06.191] [INFO] console - refresh token before: 637c0bc4-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:06:06.192] [INFO] console - refresh token later: 637c0bc4-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:06:07.987] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '637c0bc4-05db-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:06:08.068] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_list?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: '637c0bc4-05db-11e6-8a67-6c92bf21d955',
+     total_count: '2',
+     order_list: [ [Object], [Object] ] } }
+[2016-04-19 11:06:08.072] [INFO] console - refresh token before: 637c0bc4-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:06:08.073] [INFO] console - refresh token later: 637c0bc4-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:06:09.758] [INFO] console - get response body { code: '200', message: 'OK', result: {} }
+[2016-04-19 11:06:19.594] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/manage/signin?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+     merchant_id: 'MC0000006975',
+     status_bit: '15' } }
+[2016-04-19 11:06:19.600] [INFO] console - ression Session {
+  cookie: 
+   { path: '/',
+     _expires: Tue Apr 19 2016 12:06:19 GMT+0800 (中国标准时间),
+     originalMaxAge: 3599999,
+     httpOnly: true,
+     secure: false },
+  pier_merchant: 
+   { status_bit: '15',
+     merchant_id: 'MC0000006975',
+     session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+     email: 'pierup@163.com' } }
+[2016-04-19 11:06:19.602] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:06:19.786] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:06:19.975] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:06:20.046] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/dashboard/get_merchant_dashboard?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { total_success_transactions: '73',
+     gross_revenue: '-89015.00',
+     total_customers: '56',
+     items: 
+      [ [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object] ] } }
+[2016-04-19 11:06:21.079] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:06:21.141] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_list?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+     total_count: '770',
+     order_list: 
+      [ [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object] ] } }
+[2016-04-19 11:06:21.143] [INFO] console - refresh token before: a766e2f3-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:06:21.144] [INFO] console - refresh token later: a766e2f3-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:06:23.420] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:06:23.483] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_list?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+     total_count: '2',
+     order_list: [ [Object], [Object] ] } }
+[2016-04-19 11:06:23.487] [INFO] console - refresh token before: a766e2f3-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:06:23.489] [INFO] console - refresh token later: a766e2f3-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:06:24.972] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:06:25.030] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_list?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+     total_count: '770',
+     order_list: 
+      [ [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object] ] } }
+[2016-04-19 11:06:25.031] [INFO] console - refresh token before: a766e2f3-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:06:25.031] [INFO] console - refresh token later: a766e2f3-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:06:27.257] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:06:27.322] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_list?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+     total_count: '770',
+     order_list: 
+      [ [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object] ] } }
+[2016-04-19 11:06:27.323] [INFO] console - refresh token before: a766e2f3-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:06:27.324] [INFO] console - refresh token later: a766e2f3-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:06:57.073] [INFO] console - ression Session {
+  cookie: 
+   { path: '/',
+     _expires: Tue Apr 19 2016 12:06:27 GMT+0800 (中国标准时间),
+     originalMaxAge: 3599999,
+     httpOnly: true,
+     secure: false },
+  pier_merchant: 
+   { status_bit: '15',
+     merchant_id: 'MC0000006975',
+     session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+     email: 'pierup@163.com' } }
+[2016-04-19 11:06:57.074] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:06:57.346] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:06:57.403] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:06:57.497] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_list?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+     total_count: '770',
+     order_list: 
+      [ [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object] ] } }
+[2016-04-19 11:06:57.499] [INFO] console - refresh token before: a766e2f3-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:06:57.500] [INFO] console - refresh token later: a766e2f3-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:07:01.304] [INFO] console - ression Session {
+  cookie: 
+   { path: '/',
+     _expires: Tue Apr 19 2016 12:06:57 GMT+0800 (中国标准时间),
+     originalMaxAge: 3599999,
+     httpOnly: true,
+     secure: false },
+  pier_merchant: 
+   { status_bit: '15',
+     merchant_id: 'MC0000006975',
+     session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+     email: 'pierup@163.com' } }
+[2016-04-19 11:07:01.305] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:07:01.518] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:07:01.559] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:07:01.628] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_list?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+     total_count: '770',
+     order_list: 
+      [ [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object] ] } }
+[2016-04-19 11:07:01.629] [INFO] console - refresh token before: a766e2f3-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:07:01.630] [INFO] console - refresh token later: a766e2f3-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:07:02.197] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:07:02.251] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_list?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+     total_count: '770',
+     order_list: 
+      [ [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object] ] } }
+[2016-04-19 11:07:02.252] [INFO] console - refresh token before: a766e2f3-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:07:02.253] [INFO] console - refresh token later: a766e2f3-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:07:02.726] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:07:02.782] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_list?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+     total_count: '770',
+     order_list: 
+      [ [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object] ] } }
+[2016-04-19 11:07:02.786] [INFO] console - refresh token before: a766e2f3-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:07:02.789] [INFO] console - refresh token later: a766e2f3-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:07:03.580] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:07:03.636] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_list?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+     total_count: '770',
+     order_list: 
+      [ [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object] ] } }
+[2016-04-19 11:07:03.637] [INFO] console - refresh token before: a766e2f3-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:07:03.638] [INFO] console - refresh token later: a766e2f3-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:07:04.229] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:07:04.338] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_list?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+     total_count: '770',
+     order_list: 
+      [ [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object] ] } }
+[2016-04-19 11:07:04.339] [INFO] console - refresh token before: a766e2f3-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:07:04.339] [INFO] console - refresh token later: a766e2f3-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:07:04.821] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:07:04.895] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_list?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+     total_count: '770',
+     order_list: 
+      [ [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object] ] } }
+[2016-04-19 11:07:04.896] [INFO] console - refresh token before: a766e2f3-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:07:04.897] [INFO] console - refresh token later: a766e2f3-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:07:05.359] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:07:05.428] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_list?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+     total_count: '770',
+     order_list: 
+      [ [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object] ] } }
+[2016-04-19 11:07:05.433] [INFO] console - refresh token before: a766e2f3-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:07:05.435] [INFO] console - refresh token later: a766e2f3-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:07:05.862] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:07:05.925] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_list?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+     total_count: '770',
+     order_list: 
+      [ [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object] ] } }
+[2016-04-19 11:07:05.927] [INFO] console - refresh token before: a766e2f3-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:07:05.928] [INFO] console - refresh token later: a766e2f3-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:07:06.395] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:07:06.573] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_list?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+     total_count: '770',
+     order_list: 
+      [ [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object] ] } }
+[2016-04-19 11:07:06.578] [INFO] console - refresh token before: a766e2f3-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:07:06.579] [INFO] console - refresh token later: a766e2f3-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:07:06.823] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:07:06.899] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_list?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+     total_count: '770',
+     order_list: 
+      [ [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object] ] } }
+[2016-04-19 11:07:06.902] [INFO] console - refresh token before: a766e2f3-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:07:06.904] [INFO] console - refresh token later: a766e2f3-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:07:07.535] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:07:07.611] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_list?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+     total_count: '770',
+     order_list: 
+      [ [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object] ] } }
+[2016-04-19 11:07:07.613] [INFO] console - refresh token before: a766e2f3-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:07:07.614] [INFO] console - refresh token later: a766e2f3-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:07:08.023] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:07:08.090] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_list?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+     total_count: '770',
+     order_list: 
+      [ [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object] ] } }
+[2016-04-19 11:07:08.094] [INFO] console - refresh token before: a766e2f3-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:07:08.098] [INFO] console - refresh token later: a766e2f3-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:07:08.526] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:07:08.950] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_list?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+     total_count: '770',
+     order_list: 
+      [ [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object] ] } }
+[2016-04-19 11:07:08.951] [INFO] console - refresh token before: a766e2f3-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:07:08.951] [INFO] console - refresh token later: a766e2f3-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:07:08.953] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:07:09.398] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:07:09.758] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:07:10.358] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_list?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+     total_count: '770',
+     order_list: 
+      [ [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object] ] } }
+[2016-04-19 11:07:10.359] [INFO] console - refresh token before: a766e2f3-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:07:10.360] [INFO] console - refresh token later: a766e2f3-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:07:10.381] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_list?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+     total_count: '770',
+     order_list: 
+      [ [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object] ] } }
+[2016-04-19 11:07:10.382] [INFO] console - refresh token before: a766e2f3-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:07:10.382] [INFO] console - refresh token later: a766e2f3-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:07:10.398] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_list?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+     total_count: '770',
+     order_list: 
+      [ [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object] ] } }
+[2016-04-19 11:07:10.399] [INFO] console - refresh token before: a766e2f3-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:07:10.400] [INFO] console - refresh token later: a766e2f3-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:07:10.617] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:07:10.694] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_list?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+     total_count: '2',
+     order_list: [ [Object], [Object] ] } }
+[2016-04-19 11:07:10.695] [INFO] console - refresh token before: a766e2f3-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:07:10.696] [INFO] console - refresh token later: a766e2f3-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:07:11.438] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:07:11.493] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_list?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+     order_list: [],
+     total_count: '0' } }
+[2016-04-19 11:07:11.494] [INFO] console - refresh token before: a766e2f3-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:07:11.495] [INFO] console - refresh token later: a766e2f3-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:07:13.281] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:07:13.355] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_list?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+     total_count: '2',
+     order_list: [ [Object], [Object] ] } }
+[2016-04-19 11:07:13.356] [INFO] console - refresh token before: a766e2f3-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:07:13.356] [INFO] console - refresh token later: a766e2f3-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:07:18.365] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:07:18.442] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_detail?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { tracking_api_url: '',
+     fee: '0.00',
+     merchant_id: 'MC0000006975',
+     month_charge: '0.00',
+     shipping_created_on: '',
+     logistics_id: '',
+     session_token: 'a766e2f3-05db-11e6-8a67-6c92bf21d955',
+     order_status: '3',
+     shipping_company_id: '',
+     receiver_name: '李佳卫',
+     pay_type: '1',
+     grand_total: '213.00',
+     month_pay: '0.00',
+     term_id: '',
+     term_count: '',
+     created_on: '20160414103825',
+     phone: '18022540796',
+     sub_total: '213.00',
+     receiver_address: '广东省揭阳市榕城区新河晓翠路东四区21栋捷帮跑腿',
+     receiver_phone: '18022540796',
+     order_id: 'OR0000267190',
+     items: [ [Object] ] } }
+[2016-04-19 11:07:18.444] [INFO] console - refresh token before: a766e2f3-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:07:18.444] [INFO] console - refresh token later: a766e2f3-05db-11e6-8a67-6c92bf21d955
+[2016-04-19 11:10:31.289] [INFO] console - website server start ====================
+[2016-04-19 11:10:31.357] [INFO] ./log/20160419 - The server is starting
+[2016-04-19 11:10:32.273] [INFO] console - website server start ====================
+[2016-04-19 11:10:32.343] [INFO] ./log/20160419 - The server is starting
+[2016-04-19 11:11:13.760] [INFO] console - ression Session {
+  cookie: 
+   { path: '/',
+     _expires: Tue Apr 19 2016 12:11:13 GMT+0800 (中国标准时间),
+     originalMaxAge: 3600000,
+     httpOnly: true,
+     secure: false } }
+[2016-04-19 11:11:13.774] [INFO] console - checkout Auth for merchant {}
+[2016-04-19 11:11:27.488] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/manage/signin?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: '5eea35a2-05dc-11e6-8a67-6c92bf21d955',
+     merchant_id: 'MC0000006975',
+     status_bit: '15' } }
+[2016-04-19 11:11:27.497] [INFO] console - ression Session {
+  cookie: 
+   { path: '/',
+     _expires: Tue Apr 19 2016 12:11:27 GMT+0800 (中国标准时间),
+     originalMaxAge: 3600000,
+     httpOnly: true,
+     secure: false },
+  pier_merchant: 
+   { status_bit: '15',
+     merchant_id: 'MC0000006975',
+     session_token: '5eea35a2-05dc-11e6-8a67-6c92bf21d955',
+     email: 'pierup@163.com' } }
+[2016-04-19 11:11:27.500] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '5eea35a2-05dc-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:11:27.844] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '5eea35a2-05dc-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:11:28.122] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '5eea35a2-05dc-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:11:28.194] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/dashboard/get_merchant_dashboard?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { total_success_transactions: '73',
+     gross_revenue: '-89015.00',
+     total_customers: '56',
+     items: 
+      [ [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object] ] } }
+[2016-04-19 11:11:29.206] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '5eea35a2-05dc-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:11:29.282] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_list?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: '5eea35a2-05dc-11e6-8a67-6c92bf21d955',
+     total_count: '2',
+     order_list: [ [Object], [Object] ] } }
+[2016-04-19 11:11:29.284] [INFO] console - refresh token before: 5eea35a2-05dc-11e6-8a67-6c92bf21d955
+[2016-04-19 11:11:29.284] [INFO] console - refresh token later: 5eea35a2-05dc-11e6-8a67-6c92bf21d955
+[2016-04-19 11:11:30.328] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '5eea35a2-05dc-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:11:30.390] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_list?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: '5eea35a2-05dc-11e6-8a67-6c92bf21d955',
+     total_count: '770',
+     order_list: 
+      [ [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object] ] } }
+[2016-04-19 11:11:30.392] [INFO] console - refresh token before: 5eea35a2-05dc-11e6-8a67-6c92bf21d955
+[2016-04-19 11:11:30.392] [INFO] console - refresh token later: 5eea35a2-05dc-11e6-8a67-6c92bf21d955
+[2016-04-19 11:11:36.463] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '5eea35a2-05dc-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:11:36.533] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_list?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: '5eea35a2-05dc-11e6-8a67-6c92bf21d955',
+     total_count: '770',
+     order_list: 
+      [ [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object] ] } }
+[2016-04-19 11:11:36.540] [INFO] console - refresh token before: 5eea35a2-05dc-11e6-8a67-6c92bf21d955
+[2016-04-19 11:11:36.544] [INFO] console - refresh token later: 5eea35a2-05dc-11e6-8a67-6c92bf21d955
+[2016-04-19 11:11:38.360] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '5eea35a2-05dc-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:11:38.407] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_detail?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { tracking_api_url: '',
+     fee: '0.00',
+     merchant_id: 'MC0000006975',
+     month_charge: '0.00',
+     shipping_created_on: '',
+     logistics_id: '',
+     session_token: '5eea35a2-05dc-11e6-8a67-6c92bf21d955',
+     order_status: '11',
+     shipping_company_id: '',
+     receiver_name: '李佳卫',
+     pay_type: '1',
+     grand_total: '360.00',
+     month_pay: '0.00',
+     term_id: '',
+     term_count: '',
+     created_on: '20160407222931',
+     phone: '18022540796',
+     sub_total: '360.00',
+     receiver_address: '广东省揭阳市榕城区新河晓翠路东四区21栋捷帮跑腿',
+     receiver_phone: '18022540796',
+     order_id: 'OR0000244522',
+     items: [ [Object] ] } }
+[2016-04-19 11:11:38.408] [INFO] console - refresh token before: 5eea35a2-05dc-11e6-8a67-6c92bf21d955
+[2016-04-19 11:11:38.409] [INFO] console - refresh token later: 5eea35a2-05dc-11e6-8a67-6c92bf21d955
+[2016-04-19 11:11:51.054] [INFO] console - ression Session {
+  cookie: 
+   { path: '/',
+     _expires: Tue Apr 19 2016 12:11:38 GMT+0800 (中国标准时间),
+     originalMaxAge: 3600000,
+     httpOnly: true,
+     secure: false },
+  pier_merchant: 
+   { status_bit: '15',
+     merchant_id: 'MC0000006975',
+     session_token: '5eea35a2-05dc-11e6-8a67-6c92bf21d955',
+     email: 'pierup@163.com' } }
+[2016-04-19 11:11:51.056] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '5eea35a2-05dc-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:11:51.468] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '5eea35a2-05dc-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:11:51.538] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '5eea35a2-05dc-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:11:51.618] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_list?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: '5eea35a2-05dc-11e6-8a67-6c92bf21d955',
+     total_count: '770',
+     order_list: 
+      [ [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object] ] } }
+[2016-04-19 11:11:51.619] [INFO] console - refresh token before: 5eea35a2-05dc-11e6-8a67-6c92bf21d955
+[2016-04-19 11:11:51.619] [INFO] console - refresh token later: 5eea35a2-05dc-11e6-8a67-6c92bf21d955
+[2016-04-19 11:11:52.840] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '5eea35a2-05dc-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:11:52.894] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_detail?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { tracking_api_url: '',
+     fee: '0.00',
+     merchant_id: 'MC0000006975',
+     month_charge: '0.00',
+     shipping_created_on: '',
+     logistics_id: '',
+     session_token: '5eea35a2-05dc-11e6-8a67-6c92bf21d955',
+     order_status: '11',
+     shipping_company_id: '',
+     receiver_name: '李佳卫',
+     pay_type: '1',
+     grand_total: '360.00',
+     month_pay: '0.00',
+     term_id: '',
+     term_count: '',
+     created_on: '20160407222931',
+     phone: '18022540796',
+     sub_total: '360.00',
+     receiver_address: '广东省揭阳市榕城区新河晓翠路东四区21栋捷帮跑腿',
+     receiver_phone: '18022540796',
+     order_id: 'OR0000244522',
+     items: [ [Object] ] } }
+[2016-04-19 11:11:52.895] [INFO] console - refresh token before: 5eea35a2-05dc-11e6-8a67-6c92bf21d955
+[2016-04-19 11:11:52.895] [INFO] console - refresh token later: 5eea35a2-05dc-11e6-8a67-6c92bf21d955
+[2016-04-19 11:12:04.523] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '5eea35a2-05dc-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:12:04.575] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_list?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: '5eea35a2-05dc-11e6-8a67-6c92bf21d955',
+     total_count: '2',
+     order_list: [ [Object], [Object] ] } }
+[2016-04-19 11:12:04.576] [INFO] console - refresh token before: 5eea35a2-05dc-11e6-8a67-6c92bf21d955
+[2016-04-19 11:12:04.577] [INFO] console - refresh token later: 5eea35a2-05dc-11e6-8a67-6c92bf21d955
+[2016-04-19 11:12:05.391] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '5eea35a2-05dc-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:12:05.443] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_detail?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { tracking_api_url: '',
+     fee: '0.00',
+     merchant_id: 'MC0000006975',
+     month_charge: '0.00',
+     shipping_created_on: '',
+     logistics_id: '',
+     session_token: '5eea35a2-05dc-11e6-8a67-6c92bf21d955',
+     order_status: '3',
+     shipping_company_id: '',
+     receiver_name: '李佳卫',
+     pay_type: '1',
+     grand_total: '213.00',
+     month_pay: '0.00',
+     term_id: '',
+     term_count: '',
+     created_on: '20160414103825',
+     phone: '18022540796',
+     sub_total: '213.00',
+     receiver_address: '广东省揭阳市榕城区新河晓翠路东四区21栋捷帮跑腿',
+     receiver_phone: '18022540796',
+     order_id: 'OR0000267190',
+     items: [ [Object] ] } }
+[2016-04-19 11:12:05.445] [INFO] console - refresh token before: 5eea35a2-05dc-11e6-8a67-6c92bf21d955
+[2016-04-19 11:12:05.446] [INFO] console - refresh token later: 5eea35a2-05dc-11e6-8a67-6c92bf21d955
+[2016-04-19 11:12:07.610] [INFO] console - checkout Auth for merchant { status_bit: '15',
+  merchant_id: 'MC0000006975',
+  session_token: '5eea35a2-05dc-11e6-8a67-6c92bf21d955',
+  email: 'pierup@163.com' }
+[2016-04-19 11:12:07.677] [INFO] console - get response body apihttps://api.pierup.cn/merchant_api_cn/v1/order/order_list?platform=1 { code: '200',
+  message: 'OK',
+  result: 
+   { session_token: '5eea35a2-05dc-11e6-8a67-6c92bf21d955',
+     total_count: '2',
+     order_list: [ [Object], [Object] ] } }
+[2016-04-19 11:12:07.678] [INFO] console - refresh token before: 5eea35a2-05dc-11e6-8a67-6c92bf21d955
+[2016-04-19 11:12:07.679] [INFO] console - refresh token later: 5eea35a2-05dc-11e6-8a67-6c92bf21d955
+[2016-04-19 11:12:29.769] [INFO] console - get response body { code: '200', message: 'OK', result: {} }
+[2016-04-19 11:13:14.326] [INFO] console - website server start ====================
+[2016-04-19 11:13:14.393] [INFO] ./log/20160419 - The server is starting

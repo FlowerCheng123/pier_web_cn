@@ -1,0 +1,136 @@
+<!--page3-->
+   <div class="row" ng-controller="Activation3Controller">
+        <div class="col-md-12 text-center">
+		  	<h3>填写资料</h3>
+		  	<div class="info-step">
+			  	<span class="circle">3/3</span><span>授权办理信息</span>
+		  	</div>
+	    </div>
+	    <div class="col-md-10 col-md-offset-1">
+		    <form class="info-form">
+			    <article> 
+				    <div class="checkbox">
+					    <label>
+					      <input type="checkbox" ng-model="isLegalPerson"  ng-change="changeLegalPerson();"> <div class="checkbox-text">公司法人本人</div>
+					    </label>
+					</div>
+			    </article>
+  	    	    <article> 
+				    <div class="info-group">
+					    <section class="section1">
+				    	    <label>企业委托书：</label>
+					    </section>
+					    <section class="section2" style="text-align:left;">
+				    	    <a onclick="window.open('../pier_merchant/品而数据企业委托书.zip')" class="download-link">企业委托书下载</a>
+				    	    <p style="font-size:12px;">*请申请代理人填写企业委托书，代理人必须签字，委托书须加盖公司公章，或财务章（加盖合同章或业务专用章无效）。</p>
+					    </section>
+					    <section class="section3" >
+					    </section>
+				    </div>
+			    </article>
+			    
+			    <article> 
+				    <div class="info-group">
+					    <section class="section1">
+					    </section>
+					    <section class="section4">
+				    	   <img ng-src="{{imageUrl.attorney}}" class="uploadImg1">
+					    </section>
+					    <section class="section5">
+						    <button class="upload-btn" type="button" id="attorneyUploader" ng-click="uploadImage(attorneyUploader)"></button>
+						    <p class="upload-desc">签字盖章后请上传委托书扫描件，支持jpg,png格式，文件大小需少于2M。</p>
+					    </section>
+				    </div>
+			    </article>
+
+			    <div id="agentInfo">
+			    <article> 
+				    <div class="info-group">
+					    <section class="section1">
+				    	    <label for="agentName">代办人：</label>
+					    </section>
+					    <section class="section2">
+				    	    <input class="form-control" placeholder="请输入带办人的名字" name="agentName"  id="agentName" ng-model="agentName"  />
+					    </section>
+					    <section class="section3" >
+					    </section>
+				    </div>
+			    </article>
+			    <article> 
+				    <div class="info-group">
+					    <section class="section1">
+						    <label for="agentIdCard">代办人身份证号：</label>
+					    </section>
+					    <section class="section2">
+				    	    <input class="form-control" placeholder="请输入代办人的身份证号" name="agentIdCard"  id="agentIdCard" ng-model="agentIdCard"  maxlength="18" id-card-input />
+					    </section>
+					    <section class="section3" >
+					    </section>
+				    </div>
+			    </article>
+			    
+			   
+			    <article> 
+				    <div class="info-group">
+					    <section class="section1">
+					    </section>
+					    <section class="section4">
+				    	   <img ng-src="{{imageUrl.agentFront}}" class="uploadImg">
+				    	   <button class="upload-btn" id="agentFrontUploader" type="button" ng-click="uploadImage(agentFrontUploader)"></button>
+					    </section>
+					    <section class="section4">
+				    	   <img ng-src="{{imageUrl.agentBack}}" class="uploadImg">
+				    	   <button class="upload-btn" id="agentBackUploader" type="button" ng-click="uploadImage(agentBackUploader)"></button>
+					    </section>
+				    </div>
+				    <p style="margin-top:-30px;margin-left:160px;margin-right:130px;font-size:12px;" >请上传代办人身份证件照正反面扫描件，支持jpg,png格式，文件大小需少于2M。</p>
+			    </article>
+			    </div>
+
+			    <article style="margin-top:40px;"> 
+				    <div class="info-group">
+					    <section class="section1">
+				    	    <label for="agentPhone">代办人手机号：</label>
+					    </section>
+					    <section class="section2">
+				    	    <input class="form-control" placeholder="请输入带办人的手机号" name="agentPhone" maxlength="{{phoneLength}}" id="agentPhone" ng-model="agentPhone"  required/>
+					    </section>
+					    <section class="section3" >
+					    </section>
+				    </div>
+			    </article>
+			    <article> 
+				    <div class="info-group">
+					    <section class="section1">
+						    <label for="agentAuthCode">代办人手机验证码：</label>
+					    </section>
+					    <section class="section2">
+				    	    <input class="form-control valid-code-input" placeholder="请输入短信验证码" name="smsCode" id="smsCode" ng-model="smsCode" maxlength="4" required/>
+					    	<button class="valid-code-btn" type="button" ng-disabled="hasSendCode" ng-click="getValidCode()"><span ng-bind="timeHandler"></span>&nbsp;&nbsp;<i class="fa fa-gear fa-spin" ng-show="sendCodeFlag"  ></i></button>
+					    </section>
+					    <section class="section3" >
+					    </section>
+				    </div>
+			    </article>
+
+			    <article style="margin-top:40px;"> 
+				    <p style="margin-left:166px;"> 
+					    <input type="checkbox" name="serviceRule" ng-model="serviceRule" required/>
+					    <span for="serviceRule">同意</span>
+					    <a style="color:#7b37a6">《品而服务条款》</a>
+				    </p>
+				    <p style="margin-left:166px;" class="error-message" ng-bind="errorMsg"></p>
+				    <div class="info-group">
+					    <section class="section1">
+					    </section>
+					    <section class="section2">
+						    <button type="submit" class="double-part-btn" ng-click="previousStep()">上一步</button>
+				    	    <button type="submit" class="double-part-btn" ng-click="submitAll()">提交审核&nbsp;&nbsp;<i class="fa fa-gear fa-spin" ng-show="saveInfoFlag" ng-cloak></i></button>
+					    </section>
+					    <section class="section3" >
+					    </section>
+				    </div>
+			    </article>
+		    </form>
+	    </div>
+   </div>

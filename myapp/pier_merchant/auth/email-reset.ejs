@@ -1,0 +1,23 @@
+<%include ../header%>
+<div class="container" ng-app="RegisterApp" ng-controller="RegisterController">
+    <div class="auth-fence">
+		<div class="title">
+			<p>找回密码</p>
+    	</div>
+    	<div class="auth-form">
+	    	<form class="register-form">
+	    	    <div class="container-fluid text-center">
+		    	    <div class="row">
+		    	    	<div class="col-md-8 col-md-offset-2">
+			    	    	<img src="../images/merchant-email.png" style="margin-top:90px;"/>
+			    	    	<h4 style="margin-top:30px;">更改密码的邮件已发送</h4>
+			    	    	<p style="margin-top:40px;padding-left:30px;padding-right:30px;">更改密码的邮件已发送至您<a href="mailto:<%=email%>" style="color:#7b37a6;"><%=email%></a>邮箱，请前往您的邮箱，点击邮件中的链接进行后续操作。</p>
+		    	    	</div>
+		    	    </div>
+	    	    </div>
+	    	</form>
+    	</div>
+    </div>
+</div>
+<script src="../pier_merchant/js/register.js"></script>
+<%include ../footer-2%>

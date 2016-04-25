@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>用户授权书</title>
+	<style type="text/css">
+  body{
+            padding: 0.2rem;
+            counter-reset:section;
+            line-height: 0.3rem;
+            font-size: 0.24rem;
+      }
+        h4 {counter-reset:subsection;}
+        ol>li { counter-reset: nextSection;}
+        h4:before{
+            counter-increment:section;
+            content:" ";
+        }
+        ol>li:before{
+            counter-increment:subsection;
+            content:counter(section) "." counter(subsection) " ";
+      }
+      ol>li ul li:before{
+            counter-increment:nextSection;
+            content:counter(section) "." counter(subsection) "." counter(nextSection);
+      }
+      ol{
+            list-style-type: none;
+            padding-left: 0;
+      }
+      ol li{
+            margin-top: 0.1rem;
+      }
+      ul{
+            list-style-type: none;
+            padding-left: 0.1rem;
+      }
+	</style>
+  <script src="/javascripts/font-size.js"></script>
+</head>
+<body>
+    <p>本人现向品而数据科技有限公司申请【贷款】，并因该业务需要授权如下：</p>
+    <ol>
+        <li>本人同意并授权：
+            <ul>
+                <li> 品而数据科技有限公司按照国家相关规定通过合作的互联网数据服务和数据产品平台不限于一次地采集并核验与本人相关的信息，包括但不限于个人身份信息、贷款申请记录信息、位置信息、消费信息、个人财产信息、个人通信等综合信息，本人同时授权与贵公司合作的互联网数据服务平台可根据本授权书对本人相关信息进行不限于一次地查询、采集、使用、识别和处理。</li>
+                <li>本人保证提供的账户信息真实，准确，有效，合法；本人同意品而数据科技有限公司通过第三方支付机构(连连银通电子支付有限公司)代扣支付平台，从乙方的银行账户中将相应款项划拨到对应出借方账户；本人因此保证银行账户有足额款项供相应款项和手续费用的转账，如因挂失、转账冻结、金额不足等原因造成扣款失败而导致的损失由本人承担；本人账户信息如有变更，应及时通知相关方做相应变更处理，如未及时办理导致相关方损失，有本人承担。</li>
+            </ul>
+        </li>
+        <li>信息授权使用范围：
+            <p>审核本人在品而数据科技有限公司业务申请（包括但不限于贷款、消费等业务）。</p>
+        </li>
+        <li>本授权书采用电子文本形式制成，本人认可该形式的协议效力。</li>
+    </ol>
+    <p>本人声明：本人已仔细阅读上述所有条款，并已特别注意字体加黑的内容。本人对所有条款的含义及相应的法律后果已全部通晓并充分理解，本人自愿作出上述授权、承诺和声明。</p>
+    <h4 class="text-align:center;">品而数据科技有限公司保密承诺书</h4>
+    <ol>
+        <li>保密内容：
+            <ul>
+                <li>品而金融注册用户的所有信息：包括但不限于，姓名，手机号等信息</li>
+                <li>因用户的授权而采集处理的信息，包括但不限于：贷款消费信息，代扣支付信息等等</li>
+            </ul>
+        </li>
+        <li>保密义务
+            <ul>
+                <li>品而数据科技有限公司承诺未经用户有效授权，不向任何第三方或公众提供或披露用户的个人注册信息。</li>
+                <li>因用户借贷款授权而采集，处理的个人代扣支付等信息仅限于当次借贷款使用，未经用户有效授权，不向任何第三方或公众提供或披露其贷款消费等信息。</li>
+                <li>品而数据科技有限公司保证依法获取的用户资料信息的安全，并合理合法使用用户信息，未经用户有效授权，不向任何第三方或公众泄露其保密信息。</li>
+            </ul>
+        </li>
+        <li>保密例外
+            <ul>
+                <li>用户自己公开注册信息，或其他第三方披露</li>
+                <li>配合国家司法及行政机关依法依规调查查询</li>
+                <li>用户授权公开</li>
+            </ul>
+        </li>
+    </ol>
+</body>
+</html>

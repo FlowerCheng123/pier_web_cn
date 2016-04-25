@@ -1,0 +1,67 @@
+<%include ../header%>
+<div class="container" ng-app="LoginApp" ng-controller="LoginController">
+    <div class="auth-fence">
+		<div class="title">
+			<p>企业版登录</p>
+    	</div>
+    	<div class="auth-form">
+	    	<form class="register-form" id="loginForm" style="margin-top:40px;">
+	    	    <article> 
+				    <p class="auth-error" ng-show="emailNotRight" ng-cloak>{{emailErrorMsg}}</p>
+				    <div class="auth-group">
+					    <section class="section1">
+				    	    <label for="email">邮箱：</label>
+					    </section>
+					    <section class="section2">
+				    	    <input class="form-control" placeholder="请输入您的邮箱" name="email"  id="email" ng-model="email"  required ng-blur="validateEmail()"/>
+					    </section>
+					    <section class="section3" >
+					    </section>
+				    </div>
+			    </article>
+			    <article>
+				    <div class="auth-group">
+					    <section class="section1">
+				    	    <label for="password">登录密码：</label>
+					    </section>
+					    <section class="section2" >
+				    	    <input class="form-control" type="password" placeholder="请设置您的登入密码" name="password" id="password" ng-model="password"  maxlength="32" required/>
+					    </section>
+					    <section class="section3">
+					    </section>
+				    </div>
+			    </article>
+			    <article>
+				    <div class="auth-group">
+					    <section class="section1">
+				    	    <label for="authCode">输入验证码：</label>
+					    </section>
+					    <section class="section2" style="padding-left:8px;padding-right:8px;">
+				    	    <input class="form-control valid-code-input" placeholder="请输入验证码" name="authCode" id="authCode" ng-model="authCode" maxlength="5" required/>
+				    	    <img ng-src="{{imageUrl}}" class="auth-image" ng-click="getImage()" >
+					    </section>
+					    <section class="section3">
+				    	    <p></p>
+					    </section>
+				    </div>
+			    </article>
+		        <article>
+				    <p class="auth-error" ng-show="signInError"><span ng-bind="signInErrorMsg"></span></p>
+				    <div class="auth-group">
+					    <section class="section1">
+					    </section>
+					    <section class="section2" >
+				    	    <button type="submit" ng-click="login()">登录&nbsp;&nbsp;<i class="fa fa-gear fa-spin" ng-show="signInFlag" ng-cloak></i></button>
+				    	    <p style="padding-right:6px;margin-top:10px;"><a class="pull-right" href="/merchants/forgetPassword">忘记密码</a></p>
+					    </section>
+					    <section class="section3">
+				    	    <p></p>
+					    </section>
+				    </div>
+			    </article>
+	    	</form>
+    	</div>
+    </div>
+</div>
+<script src="../pier_merchant/js/login.js"></script>
+<%include ../footer-2%>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>报告</title>
+	<link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<style type="text/css">
+	    body{
+	    	background: rgb(240,240,240);
+	    }
+	    #errorMsg{
+	    	color: red;
+	    }
+	</style>
+</head>
+<body >
+    <div class="container">
+	    <h2 style="margin-top:100px;" class="text-center">品而数据接口demo</h2>
+	    <div class="row">
+		    <div class="col-md-4 col-md-offset-4"  style="padding-top:40px;">
+				<form>
+				    <div class="form-group">
+				        <label for="name">名称</label>
+				        <input type="text" class="form-control" id="name" 
+				         placeholder="请输入姓名">
+				    </div>
+				    <div class="form-group">
+				        <label for="idCard">身份证</label>
+				        <input type="text" class="form-control" id="idCard" maxlength="18" 
+				         placeholder="请输入身份证信息">
+				    </div>
+				    <div class="form-group">
+				        <label for="phone">手机号</label>
+				        <input type="text" class="form-control" id="phone" maxlength="11" 
+				         placeholder="请输入手机号">
+				    </div>
+				    <div class="form-group">
+				        <label for="bankCard">银行卡号</label>
+				        <input type="text" class="form-control" id="bankCard" 
+				         placeholder="请输入银行卡号">
+				    </div>
+				    
+				</form>
+				<form class="text-center">
+					<p id="errorMsg"></p>
+				    <button class="btn btn-primary" id="submit" type="button" style="margin:0 auto;">提交</button>
+			    </form>
+
+			</div>
+		</div>
+	</div>
+</body>
+<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+        $('#submit').click( function(){
+        	var _name = $('#name').val();
+        	var _idCard = $('#idCard').val();
+        	var _phone = $('#phone').val();
+        	var _bankCard = $('#bankCard').val();
+        	$('#errorMsg').html('');
+        	if( _name == '' || _name == undefined ){
+        		$('#errorMsg').html( '姓名不能为空');
+        		return;
+        	}
+        	if( _idCard == '' || _idCard == undefined ){
+        		$('#errorMsg').html( '身份证不能为空');
+        		return;
+        	}
+        	window.open('http://pierup.asuscomm.com:8686/pier-data-query/report?name='+_name+'&id_number='+_idCard+'&card_number='+_bankCard+'&phone='+_phone);
+        } )
+	})
+</script>
+</html>
